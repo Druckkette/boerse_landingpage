@@ -24,7 +24,7 @@ Der fertige statische Build liegt danach im Ordner `dist`.
 
 - **Vercel:** Framework Preset `Vite`, Build Command `npm run build`, Output Directory `dist`.
 - **Netlify:** Build Command `npm run build`, Publish Directory `dist`.
-- **GitHub Pages:** `npm run build` ausführen und den Inhalt von `dist` veröffentlichen. `vite.config.ts` nutzt `base: "./"`, damit Assets auch unter einem Repository-Pfad funktionieren.
+- **GitHub Pages:** Das Repository enthält `.github/workflows/deploy-pages.yml`. In den GitHub-Pages-Einstellungen muss als Quelle **GitHub Actions** ausgewählt sein. Der Workflow baut mit `npm run build` und veröffentlicht den Ordner `dist`.
 
 ## Vor Livegang ersetzen
 
