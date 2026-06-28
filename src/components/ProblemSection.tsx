@@ -13,9 +13,10 @@ export function ProblemSection() {
         </div>
         <div className="card-grid problem-grid">
           {problems.map((problem, index) => (
-            <article className="problem-card" key={problem}>
+            <article className="problem-card" key={problem.thought}>
               <span className="card-number">{String(index + 1).padStart(2, "0")}</span>
-              <p>{problem}</p>
+              <blockquote>{problem.thought}</blockquote>
+              <p>{problem.pattern}</p>
             </article>
           ))}
         </div>

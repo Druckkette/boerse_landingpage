@@ -15,10 +15,16 @@ export function AuthorSection() {
           <p className="section-kicker">Über den Autor</p>
           <h2 id="author-title">Dr. Aljoscha Groos</h2>
           <p>
-            Dr. Aljoscha Groos beschäftigt sich seit vielen Jahren mit Aktien,
-            Marktpsychologie und strukturierten Investmentprozessen. In
-            „Börse ohne Bauchgefühl“ verbindet er persönliche Börsenerfahrung
-            mit einem klaren, praxisnahen Regelwerk für Privatanleger.
+            Viele Anleger wissen theoretisch, was vernünftig wäre — handeln aber
+            in entscheidenden Momenten trotzdem emotional. Genau diese Lücke
+            zwischen Wissen und Handeln wollte Dr. Aljoscha Groos mit „Börse ohne
+            Bauchgefühl“ schließen.
+          </p>
+          <p>
+            Er beschäftigt sich seit vielen Jahren mit Aktien, Marktpsychologie
+            und strukturierten Investmentprozessen und verbindet persönliche
+            Börsenerfahrung mit einem klaren, praxisnahen Regelwerk für
+            Privatanleger.
           </p>
           <dl className="author-signals" aria-label="Thematische Schwerpunkte">
             <div>

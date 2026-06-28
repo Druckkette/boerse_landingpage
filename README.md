@@ -30,7 +30,7 @@ Der fertige statische Build liegt danach im Ordner `dist`.
 
 - Kauf-Links in `src/config/links.ts` (`BOOK_LINKS`)
 - Impressum-, Datenschutz- und Kontakt-Links in `src/config/links.ts` (`LEGAL_LINKS`)
-- Newsletter-Endpoint und Feldnamen in `src/config/links.ts` und `src/components/LeadMagnetSection.tsx`
+- Newsletter-Endpoint und Feldnamen in `src/config/links.ts` und `src/components/LeadMagnetSection.tsx`; ohne Endpoint zeigt der Lead-Magnet bewusst „Download bald verfügbar“
 - Tracking-Setup in `src/lib/tracking.ts` für Meta Pixel, Google Analytics oder Plausible
 - Open-Graph-Bild und absolute Produktions-URL in `index.html`, sobald die Domain feststeht
 

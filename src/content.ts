@@ -1,9 +1,24 @@
 export const problems = [
-  "Gewinner werden zu früh verkauft",
-  "Verlierer werden zu lange gehalten",
-  "Käufe entstehen aus Hype oder Angst, etwas zu verpassen",
-  "Es fehlt ein klarer Plan für Einstieg, Ausstieg und Risiko",
-  "Emotionen ersetzen Regeln"
+  {
+    thought: "Ich nehme lieber schnell Gewinn mit.",
+    pattern: "Gewinner werden zu früh verkauft"
+  },
+  {
+    thought: "Die Aktie kommt bestimmt wieder zurück.",
+    pattern: "Verlierer werden zu lange gehalten"
+  },
+  {
+    thought: "Alle reden darüber — ich muss rein.",
+    pattern: "Käufe entstehen aus Hype oder Angst, etwas zu verpassen"
+  },
+  {
+    thought: "Ich kaufe erst und überlege später, wann ich verkaufe.",
+    pattern: "Es fehlt ein klarer Plan für Einstieg, Ausstieg und Risiko"
+  },
+  {
+    thought: "Heute fühlt es sich richtig an.",
+    pattern: "Emotionen ersetzen Regeln"
+  }
 ];
 
 export const processSteps = [
@@ -36,6 +51,29 @@ export const takeaways = [
   "Wie du Chancen und Risiken vor dem Kauf bewertest",
   "Wie du mit klaren Regeln ruhiger investierst",
   "Wie du deine persönliche Börsenroutine entwickelst"
+];
+
+export const lookInsideItems = [
+  {
+    label: "Beispiel-Checkliste",
+    title: "Vor dem Kauf prüfen",
+    text: "Welche Annahmen, Risiken und Ausstiegspunkte sollten feststehen, bevor du eine Position eröffnest?"
+  },
+  {
+    label: "Beispiel-Routine",
+    title: "30-Minuten-Börsenroutine",
+    text: "Wie du Entscheidungen vorbereitest, ohne jeden Tag permanent auf Kurse und Nachrichten zu reagieren."
+  },
+  {
+    label: "Beispiel-Regel",
+    title: "Was muss vor dem Einstieg klar sein?",
+    text: "Vom Marktumfeld über das Signal bis zur Positionsgröße: erst der Plan, dann die Order."
+  },
+  {
+    label: "Beispiel-Kapitel",
+    title: "Warum Hoffnung kein Risikomanagement ist",
+    text: "Wie typische Denkfehler entstehen und warum klare Regeln gerade in Stressmomenten helfen."
+  }
 ];
 
 export const faqs = [

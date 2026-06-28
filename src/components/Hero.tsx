@@ -4,12 +4,6 @@ import { trackEvent } from "../lib/tracking";
 export function Hero() {
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
-      <img
-        className="hero-cover"
-        src={IMAGE_PATHS.cover}
-        alt="Buchcover Börse ohne Bauchgefühl von Aljoscha Michael Groos"
-        loading="eager"
-      />
       <div className="hero-overlay" aria-hidden="true" />
       <div className="container hero-inner">
         <div className="hero-copy">
@@ -19,13 +13,23 @@ export function Hero() {
             Ein praxisnahes Finanzbuch für Privatanleger, die klarer, ruhiger
             und regelbasierter investieren möchten.
           </p>
+        </div>
+        <figure className="hero-visual" aria-label="Buchcover">
+          <img
+            className="hero-cover"
+            src={IMAGE_PATHS.cover}
+            alt="Buchcover Börse ohne Bauchgefühl von Aljoscha Michael Groos"
+            loading="eager"
+          />
+        </figure>
+        <div className="hero-conversion">
           <div className="hero-actions" aria-label="Primäre Aktionen">
             <a
               className="button button-primary"
               href="#kaufen"
               onClick={() => trackEvent("book_primary_cta_click", { target: "purchase" })}
             >
-              Buch ansehen
+              Buch vorbestellen
             </a>
             <a
               className="button button-secondary"
