@@ -23,20 +23,26 @@ export function LeadMagnetSection() {
         <div className="lead-preview" aria-hidden="true">
           <div className="pdf-mockup">
             <span>Checkliste</span>
-            <strong>7 Regeln gegen emotionale Börsenfehler</strong>
+            <strong>12-Punkte-Kaufcheckliste</strong>
+            <p>Prüfe vor jeder Order:</p>
             <ul>
-              <li>Plan vor Order</li>
-              <li>Risiko vor Rendite</li>
-              <li>Regel vor Gefühl</li>
+              <li>Marktphase</li>
+              <li>Relative Stärke</li>
+              <li>Kaufzone</li>
+              <li>Stopp & Risiko</li>
+              <li>Quartalszahlen</li>
+              <li>Verkaufsplan</li>
             </ul>
           </div>
         </div>
         <div className="lead-copy">
           <p className="section-kicker">Kostenlose Checkliste</p>
-          <h2 id="lead-title">7 Regeln gegen emotionale Börsenfehler</h2>
+          <h2 id="lead-title">Die 12-Punkte-Kaufcheckliste gegen Bauchgefühl-Trades</h2>
           <p>
-            Erhalte eine kompakte Checkliste, mit der du vor jedem Investment
-            prüfen kannst, ob du nach Plan handelst — oder aus dem Bauch heraus.
+            Bevor du eine Aktie kaufst, sollten Marktphase, Setup, Risiko,
+            Stopp, Positionsgröße und nächster Ausstieg klar sein. Die
+            Checkliste hilft dir, genau diese Punkte vor der Order zu prüfen -
+            damit aus einem spontanen Impuls ein bewusster Trade wird.
           </p>
           <form
             className="lead-form"

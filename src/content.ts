@@ -1,78 +1,198 @@
 export const problems = [
   {
-    thought: "Ich nehme lieber schnell Gewinn mit.",
-    pattern: "Gewinner werden zu früh verkauft"
-  },
-  {
     thought: "Die Aktie kommt bestimmt wieder zurück.",
-    pattern: "Verlierer werden zu lange gehalten"
+    pattern:
+      "Hoffnung ersetzt Risikomanagement. Verluste werden ausgesessen, obwohl Kapital an anderer Stelle besser arbeiten könnte."
   },
   {
-    thought: "Alle reden darüber — ich muss rein.",
-    pattern: "Käufe entstehen aus Hype oder Angst, etwas zu verpassen"
+    thought: "Alle reden darüber - ich muss jetzt rein.",
+    pattern:
+      "FOMO führt zu Käufen weit über dem sinnvollen Einstiegspunkt. Der Plan entsteht erst, wenn der Trade schon läuft."
   },
   {
-    thought: "Ich kaufe erst und überlege später, wann ich verkaufe.",
-    pattern: "Es fehlt ein klarer Plan für Einstieg, Ausstieg und Risiko"
+    thought: "Ich nehme den Gewinn lieber schnell mit.",
+    pattern:
+      "Gewinner werden zu früh verkauft, während Verlierer zu lange gehalten werden. Das Chance-Risiko-Verhältnis kippt."
   },
   {
-    thought: "Heute fühlt es sich richtig an.",
-    pattern: "Emotionen ersetzen Regeln"
+    thought: "Der Markt sieht doch stark aus.",
+    pattern:
+      "Ein Index kann stabil wirken, obwohl die Marktbreite bröckelt und nur noch wenige Schwergewichte tragen."
+  },
+  {
+    thought: "Ich kaufe erst einmal und setze den Stopp später.",
+    pattern:
+      "Ohne vorher definierten Ausstieg wird jede Korrektur zur emotionalen Verhandlung."
+  },
+  {
+    thought: "Diesmal ist es anders.",
+    pattern:
+      "Angst, Gier und Hoffnung verändern sich nicht. Sie zeigen sich nur in neuen Geschichten, neuen Hypes und neuen Charts."
   }
 ];
 
 export const processSteps = [
-  "Marktumfeld einschätzen",
-  "Aktien strukturiert auswählen",
-  "Einstiegssignale definieren",
-  "Risiko vor dem Kauf begrenzen",
-  "Verkäufe regelbasiert planen",
-  "Routinen und Checklisten für den Alltag nutzen"
+  {
+    title: "Psychologie verstehen",
+    text:
+      "Erkenne, wie Verlustangst, Gier, Hoffnung, FOMO und Selbstüberschätzung deine Entscheidungen verzerren."
+  },
+  {
+    title: "Marktphase einordnen",
+    text:
+      "Prüfe, ob der Markt Rückenwind gibt oder ob Korrektur, Distribution und schwache Marktbreite zur Vorsicht mahnen."
+  },
+  {
+    title: "Aktien systematisch auswählen",
+    text:
+      "Filtere nach Branche, relativer Stärke, Wachstum, Qualität, Volatilität und technischer Position statt nach Bauchgefühl."
+  },
+  {
+    title: "Charts regelbasiert lesen",
+    text:
+      "Nutze Kurs, Volumen, gleitende Durchschnitte, Basismuster und Warnsignale, um Timing und Risiko planbar zu machen."
+  },
+  {
+    title: "Käufe vorbereiten",
+    text:
+      "Definiere Kaufzone, Einstiegssignal, Stopp, Positionsgröße und Quartalszahlen-Risiko, bevor du eine Order platzierst."
+  },
+  {
+    title: "Verkäufe planen",
+    text:
+      "Sichere Gewinne in Stärke, reduziere in Schwäche und verhindere, dass aus einem guten Trade ein schlechter wird."
+  },
+  {
+    title: "Risiko steuern",
+    text:
+      "Begrenze Verluste, arbeite mit sinnvollen Positionsgrößen und passe deinen Investitionsgrad an Markt und Depotkurve an."
+  },
+  {
+    title: "Aus Trades lernen",
+    text:
+      "Dokumentiere Käufe und Verkäufe, prüfe deine Regeln und entwickle aus Fehlern ein belastbares persönliches System."
+  }
+];
+
+export const bookContents = [
+  {
+    title: "Psychologie & Mindset",
+    text:
+      "Warum Angst, Gier und Hoffnung seit Jahrhunderten dieselben Fehler erzeugen - und wie du mentale Energie, Disziplin und Routinen schützt."
+  },
+  {
+    title: "Den Markt verstehen",
+    text:
+      "Wie Marktzyklen entstehen, woran du Akkumulation, Aufwärtstrend, Distribution und Abwärtstrend erkennst und warum Marktbreite entscheidend ist."
+  },
+  {
+    title: "Aktienauswahl",
+    text:
+      "Wie du aus tausenden Aktien eine kurze Liste echter Kandidaten machst - über Sektoren, Industriegruppen, fundamentale Kennzahlen, relative Stärke und Watchlists."
+  },
+  {
+    title: "Chartanalyse",
+    text:
+      "Wie du Kerzen, Volumen, gleitende Durchschnitte, Basismuster und Warnsignale liest, damit Einstiege und Stopps nicht zufällig entstehen."
+  },
+  {
+    title: "Kaufregeln",
+    text:
+      "Warum du nur kaufst, wenn Markt, Aktie, Chart, Volumen, Risiko und Timing zusammenpassen - und warum Nachkaufen in Schwäche tabu ist."
+  },
+  {
+    title: "Verkaufsregeln",
+    text:
+      "Wie du Verluste begrenzt, Gewinne in Stärke sicherst und bei Schwächesignalen konsequent handelst, statt Buchgewinne wieder abzugeben."
+  },
+  {
+    title: "Risiko- & Portfoliomanagement",
+    text:
+      "Wie du Positionsgrößen, Stopps, Cashquote, Quartalszahlen und Depotentwicklung steuerst, damit ein einzelner Trade dein System nicht zerstört."
+  },
+  {
+    title: "Lernen aus Trades",
+    text:
+      "Wie du mit Handelstagebuch, Screenshots, Ex-post-Analyse und täglichen sowie wöchentlichen Routinen deine eigene Entscheidungsqualität verbesserst."
+  }
 ];
 
 export const audiences = [
   {
-    title: "Für Privatanleger",
-    text: "Die ihre Aktien, ETFs oder Einzelwerte strukturierter angehen und Entscheidungen dokumentierter treffen wollen."
+    title: "Für ambitionierte Privatanleger",
+    text:
+      "Wenn du Einzelaktien nicht nur kaufen, sondern verstehen, auswählen, timen und managen möchtest."
   },
   {
     title: "Für Berufstätige",
-    text: "Die keine Zeit für ständige Marktbeobachtung haben und trotzdem nach einem klaren Prozess investieren möchten."
+    text:
+      "Wenn du keine Zeit für permanente Marktbeobachtung hast, aber trotzdem mit klaren Routinen und Checklisten arbeiten willst."
   },
   {
-    title: "Für ruhigeres Handeln",
-    text: "Für Anleger, die Angst, Gier und Hoffnung erkennen und mit Regeln besser kontrollieren möchten."
+    title: "Für Anleger mit ersten Fehlern",
+    text:
+      "Wenn du schon erlebt hast, wie FOMO, Hoffnung oder zu spätes Verkaufen dein Depot belasten."
+  },
+  {
+    title: "Für strukturierte Einsteiger",
+    text:
+      "Wenn du von Anfang an lernen willst, Risiko, Marktphase und Positionsgröße ernst zu nehmen, bevor du größere Trades platzierst."
+  },
+  {
+    title: "Für Fortgeschrittene",
+    text:
+      "Wenn du deine Aktienauswahl, Chartanalyse, Kaufregeln und Verkaufsregeln zu einem einheitlichen Prozess verbinden möchtest."
   }
 ];
 
+export const notForYou = [
+  "schnelle Aktientipps ohne eigenes Denken suchst",
+  "garantierte Renditen erwartest",
+  "ohne Regeln in Hypes springen möchtest",
+  "Verluste lieber aussitzt, statt sie zu begrenzen"
+];
+
 export const takeaways = [
-  "Wie du typische emotionale Börsenfehler erkennst",
-  "Wie du aus spontanen Entscheidungen einen Prozess machst",
-  "Wie du Chancen und Risiken vor dem Kauf bewertest",
-  "Wie du mit klaren Regeln ruhiger investierst",
-  "Wie du deine persönliche Börsenroutine entwickelst"
+  "Wie du Angst, Gier, Hoffnung und FOMO in echten Marktsituationen erkennst",
+  "Wie du Marktphasen und Marktbreite einordnest, bevor du Einzelaktien kaufst",
+  "Wie du starke Aktien über Sektor, Industriegruppe, relative Stärke und Fundamentaldaten filterst",
+  "Wie du Chartmuster, Volumen und gleitende Durchschnitte für Timing und Risiko nutzt",
+  "Wie du Einstiege planst, statt Kursen hinterherzulaufen",
+  "Wie du Gewinne in Stärke sicherst und Verluste konsequent begrenzt",
+  "Wie du Positionsgrößen, Stopps und Cashquote an dein Risiko anpasst",
+  "Wie du mit Handelstagebuch und Ex-post-Analyse aus deinen Trades lernst"
 ];
 
 export const lookInsideItems = [
   {
+    label: "Beispiel-Regel",
+    title: "Nie ohne Ausstieg kaufen",
+    text:
+      "Vor dem Einstieg steht fest, wann du falschliegst, wo dein Stopp liegt und wie groß dein maximales Risiko ist."
+  },
+  {
     label: "Beispiel-Checkliste",
-    title: "Vor dem Kauf prüfen",
-    text: "Welche Annahmen, Risiken und Ausstiegspunkte sollten feststehen, bevor du eine Position eröffnest?"
+    title: "Ist die Aktie wirklich in Position?",
+    text:
+      "Marktphase, relative Stärke, Volumen, Basismuster, Abstand zum Kaufpunkt und Quartalszahlen werden vor dem Kauf geprüft."
   },
   {
     label: "Beispiel-Routine",
-    title: "30-Minuten-Börsenroutine",
-    text: "Wie du Entscheidungen vorbereitest, ohne jeden Tag permanent auf Kurse und Nachrichten zu reagieren."
+    title: "30 bis 45 Minuten Börsenalltag",
+    text:
+      "Die Inhalte sind so angelegt, dass sie auch neben dem Beruf umsetzbar bleiben - mit festen Abläufen statt Dauerbeobachtung."
   },
   {
-    label: "Beispiel-Regel",
-    title: "Was muss vor dem Einstieg klar sein?",
-    text: "Vom Marktumfeld über das Signal bis zur Positionsgröße: erst der Plan, dann die Order."
+    label: "Beispiel-Warnsignal",
+    title: "Wenn Stärke zur Distribution wird",
+    text:
+      "Du lernst, wann hohe Kurse nicht mehr Stärke bedeuten, sondern Abgabedruck, Fehlausbrüche oder nachlassende Marktbreite anzeigen."
   },
   {
-    label: "Beispiel-Kapitel",
-    title: "Warum Hoffnung kein Risikomanagement ist",
-    text: "Wie typische Denkfehler entstehen und warum klare Regeln gerade in Stressmomenten helfen."
+    label: "Beispiel-Lernschleife",
+    title: "Aus jedem Trade lernen",
+    text:
+      "Käufe, Verkäufe, Emotionen, Marktumfeld und Regelverstöße werden dokumentiert, damit aus Erfahrung ein belastbares System entsteht."
   }
 ];
 
@@ -80,21 +200,41 @@ export const faqs = [
   {
     question: "Ist das Buch eine Anlageberatung?",
     answer:
-      "Nein. Das Buch gibt keine individuellen Anlageempfehlungen. Es vermittelt einen strukturierten Prozess, mit dem Privatanleger ihre eigenen Entscheidungen bewusster treffen können."
+      "Nein. Das Buch gibt keine individuellen Kauf- oder Verkaufsempfehlungen. Es vermittelt einen strukturierten Prozess, mit dem du eigene Entscheidungen bewusster vorbereiten, umsetzen und nachbereiten kannst."
   },
   {
-    question: "Geht es eher um Aktien oder ETFs?",
+    question: "Geht es um langfristiges Investieren oder Trading?",
     answer:
-      "Der Schwerpunkt liegt auf strukturiertem Investieren, Marktpsychologie und Entscheidungsregeln. Viele Prinzipien sind sowohl für Aktien als auch für andere Anlageformen hilfreich."
+      "Das Buch verbindet langfristiges Denken mit regelbasiertem Positionsmanagement. Im Mittelpunkt stehen Aktienauswahl, Marktphase, Einstieg, Ausstieg und Risikobegrenzung - also die Frage, wie du Entscheidungen systematisch triffst."
   },
   {
-    question: "Ist das Buch auch für Anfänger geeignet?",
+    question: "Ist das Buch für Anfänger geeignet?",
     answer:
-      "Ja, sofern ein grundsätzliches Interesse an Börse, Aktien und Geldanlage vorhanden ist. Die Inhalte sollen verständlich und praxisnah sein."
+      "Ja, wenn du bereit bist, dich ernsthaft mit Börse, Risiko und Entscheidungsprozessen auseinanderzusetzen. Das Buch startet bei Psychologie und Marktverständnis und führt Schritt für Schritt zu konkreten Regeln."
+  },
+  {
+    question: "Ist das Buch auch für Berufstätige umsetzbar?",
+    answer:
+      "Ja. Die Routinen sind so gedacht, dass du nicht permanent Kurse beobachten musst. Ziel ist ein klarer Ablauf, der mit etwa 30 bis 45 Minuten täglicher Beschäftigung vereinbar ist."
+  },
+  {
+    question: "Bekomme ich konkrete Aktienempfehlungen?",
+    answer:
+      "Nein. Der Fokus liegt nicht auf Tipps, sondern auf einem Prozess, mit dem du selbst Kandidaten findest, prüfst und managst."
+  },
+  {
+    question: "Warum spielt Psychologie eine so große Rolle?",
+    answer:
+      "Weil viele Fehler nicht aus fehlenden Informationen entstehen, sondern aus Angst, Gier, Hoffnung, FOMO oder Selbstüberschätzung. Das Buch zeigt, wie du diese Muster erkennst und durch Regeln ersetzt."
+  },
+  {
+    question: "Was unterscheidet das Buch von typischen Börsenratgebern?",
+    answer:
+      "Es behandelt nicht nur einzelne Tipps oder Kennzahlen, sondern den gesamten Ablauf: Mindset, Marktphase, Aktienauswahl, Chartanalyse, Kaufregeln, Verkaufsregeln, Risiko, Portfolio und Lernroutine."
   },
   {
     question: "Verspricht das Buch höhere Renditen?",
     answer:
-      "Nein. Es geht nicht um Versprechen, sondern um bessere Entscheidungsprozesse, Risikobewusstsein und Disziplin."
+      "Nein. Es gibt kein Renditeversprechen. Ziel ist, deine Entscheidungsqualität zu verbessern, Risiken bewusster zu steuern und emotionale Fehler zu reduzieren."
   }
 ];

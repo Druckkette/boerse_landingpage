@@ -7,9 +7,17 @@ export function ProblemSection() {
         <div className="section-heading narrow">
           <p className="section-kicker">Das eigentliche Risiko</p>
           <h2 id="problem-title">
-            Viele Anleger scheitern nicht am Markt — sondern an ihren eigenen
-            Entscheidungen.
+            Viele Anleger verlieren nicht wegen fehlender Informationen -
+            sondern wegen schlechter Entscheidungen.
           </h2>
+          <p>
+            Heute kann jeder in wenigen Minuten ein Depot eröffnen. Das Problem
+            ist nicht mehr der Zugang zur Börse. Das Problem ist, was danach
+            passiert: Kurse laufen gegen dich, Nachrichten verunsichern dich,
+            Gewinne machen euphorisch und Verluste werden schöngeredet. Genau
+            dort entscheidet sich, ob du nach Plan handelst - oder nach
+            Bauchgefühl.
+          </p>
         </div>
         <div className="card-grid problem-grid">
           {problems.map((problem, index) => (

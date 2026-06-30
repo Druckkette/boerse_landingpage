@@ -14,21 +14,35 @@ export function PurchaseSection() {
         <div>
           <p className="section-kicker">Buch vorbestellen</p>
           <h2 id="purchase-title">Börse ohne Bauchgefühl</h2>
-          <p>Für alle, die an der Börse nicht lauter, sondern klarer werden wollen.</p>
+          <p>
+            Für Anleger, die nicht den nächsten heißen Tipp suchen, sondern
+            einen klaren Prozess: Markt verstehen, Aktien auswählen, Einstiege
+            planen, Verkäufe umsetzen, Risiken begrenzen und aus eigenen Trades
+            lernen.
+          </p>
+          <ul className="purchase-bullets">
+            <li>Praxisnaher Leitfaden für Privatanleger</li>
+            <li>Mit Checklisten, Routinen und Chartbeispielen</li>
+            <li>Von Psychologie bis Risikomanagement</li>
+            <li>Geeignet für die Umsetzung neben dem Beruf</li>
+          </ul>
         </div>
-        <div className="purchase-actions">
-          {purchaseLinks.map((link) => (
-            <a
-              className={`button ${link.variant === "primary" ? "button-primary" : "button-secondary"}`}
-              href={link.href}
-              key={link.channel}
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => trackEvent("book_outbound_click", { channel: link.channel })}
-            >
-              {link.label}
-            </a>
-          ))}
+        <div className="purchase-cta-panel">
+          <div className="purchase-actions">
+            {purchaseLinks.map((link) => (
+              <a
+                className={`button ${link.variant === "primary" ? "button-primary" : "button-secondary"}`}
+                href={link.href}
+                key={link.channel}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => trackEvent("book_outbound_click", { channel: link.channel })}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <p className="purchase-note">Verfügbarkeit und Preise können je nach Anbieter variieren.</p>
         </div>
       </div>
     </section>

@@ -7,33 +7,48 @@ export function AuthorSection() {
         <figure className="author-portrait">
           <img
             src={IMAGE_PATHS.author}
-            alt="Portrait von Dr. Aljoscha Groos"
+            alt="Dr. Aljoscha Michael Groos, Autor von Börse ohne Bauchgefühl"
             loading="lazy"
           />
         </figure>
         <div className="author-copy">
           <p className="section-kicker">Über den Autor</p>
-          <h2 id="author-title">Dr. Aljoscha Groos</h2>
+          <h2 id="author-title">Dr. Aljoscha Michael Groos</h2>
           <p>
-            Viele Anleger wissen theoretisch, was vernünftig wäre — handeln aber
-            in entscheidenden Momenten trotzdem emotional. Genau diese Lücke
-            zwischen Wissen und Handeln wollte Dr. Aljoscha Groos mit „Börse ohne
-            Bauchgefühl“ schließen.
+            Dr. Aljoscha Michael Groos beschäftigt sich seit über 15 Jahren
+            aktiv mit internationalen Aktienmärkten. Sein Schwerpunkt liegt auf
+            technischer Analyse, Marktstruktur, relativer Stärke und
+            regelbasiertem Positionsmanagement.
           </p>
           <p>
-            Er beschäftigt sich seit vielen Jahren mit Aktien, Marktpsychologie
-            und strukturierten Investmentprozessen und verbindet persönliche
-            Börsenerfahrung mit einem klaren, praxisnahen Regelwerk für
-            Privatanleger.
+            Sein Interesse an der Börse begann früh mit einem eigenen Spieldepot,
+            das er noch anhand von Kursen aus der Tageszeitung pflegte. Geprägt
+            wurde sein Blick auf die Börse auch durch die Erfahrung, dass
+            fehlendes Wissen und blinde Abhängigkeit von fremden Empfehlungen
+            teuer werden können.
+          </p>
+          <p>
+            Aus vielen Jahren eigener Hochs, Fehler und Lernschleifen entstand
+            der Ansatz hinter „Börse ohne Bauchgefühl“: ein System, das Anlegern
+            hilft, selbstbestimmter zu handeln, Risiken früher zu erkennen und
+            Entscheidungen nicht von Emotionen dominieren zu lassen.
           </p>
           <dl className="author-signals" aria-label="Thematische Schwerpunkte">
             <div>
               <dt>Fokus</dt>
-              <dd>Regeln statt Reaktion</dd>
+              <dd>Marktstruktur & relative Stärke</dd>
             </div>
             <div>
               <dt>Ansatz</dt>
-              <dd>Checklisten und Routinen</dd>
+              <dd>Regeln, Checklisten, Routinen</dd>
+            </div>
+            <div>
+              <dt>Erfahrung</dt>
+              <dd>Über 15 Jahre Aktienmärkte</dd>
+            </div>
+            <div>
+              <dt>Ziel</dt>
+              <dd>Selbstbestimmte Entscheidungen</dd>
             </div>
           </dl>
         </div>
