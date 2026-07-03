@@ -153,14 +153,30 @@ export const notForYou = [
 ];
 
 export const takeaways = [
-  "Wie du Angst, Gier, Hoffnung und FOMO in echten Marktsituationen erkennst",
-  "Wie du Marktphasen und Marktbreite einordnest, bevor du Einzelaktien kaufst",
-  "Wie du starke Aktien über Sektor, Industriegruppe, relative Stärke und Fundamentaldaten filterst",
-  "Wie du Chartmuster, Volumen und gleitende Durchschnitte für Timing und Risiko nutzt",
-  "Wie du Einstiege planst, statt Kursen hinterherzulaufen",
-  "Wie du Gewinne in Stärke sicherst und Verluste konsequent begrenzt",
-  "Wie du Positionsgrößen, Stopps und Cashquote an dein Risiko anpasst",
-  "Wie du mit Handelstagebuch und Ex-post-Analyse aus deinen Trades lernst"
+  {
+    segments: [
+      { text: "Du nimmst ein Regelwerk mit, das " },
+      { text: "Angst, Gier, Hoffnung und FOMO", bold: true },
+      { text: " in echten Marktsituationen erkennbar macht. Vor dem Kauf prüfst du " },
+      { text: "Marktphase, Marktbreite und Aktienqualität", bold: true },
+      {
+        text:
+          ", statt einzelnen Tipps oder steigenden Kursen hinterherzulaufen. Starke Kandidaten entstehen aus Sektor, Industriegruppe, relativer Stärke und Fundamentaldaten."
+      }
+    ]
+  },
+  {
+    segments: [
+      { text: "Für Timing und Risiko nutzt du " },
+      { text: "Chartmuster, Volumen und gleitende Durchschnitte", bold: true },
+      {
+        text:
+          ". Einstieg, Stopp, Positionsgröße und Cashquote werden vorab geplant; Gewinne sicherst du in Stärke, Verluste begrenzt du konsequent. Mit "
+      },
+      { text: "Handelstagebuch und Ex-post-Analyse", bold: true },
+      { text: " wird aus jedem Trade Material für bessere Entscheidungen." }
+    ]
+  }
 ];
 
 export const lookInsideItems = [
@@ -193,7 +209,27 @@ export const lookInsideItems = [
     title: "Aus jedem Trade lernen",
     text:
       "Käufe, Verkäufe, Emotionen, Marktumfeld und Regelverstöße werden dokumentiert, damit aus Erfahrung ein belastbares System entsteht."
+  },
+  {
+    label: "Beispiel-Rechnung",
+    title: "Positionsgröße vor dem Kauf festlegen",
+    text:
+      "Bei 20.000 Euro Depot, 1 % maximalem Depotrisiko und 8 % Stopp-Abstand liegt das Risiko bei 200 Euro; daraus ergibt sich die Positionsgröße, nicht aus Gefühl."
   }
+];
+
+export type Testimonial = {
+  quote: string;
+  name: string;
+  role?: string;
+};
+
+export const testimonials: Testimonial[] = [
+  // {
+  //   quote: "Stimme aus Lektorat oder Testlesen hier ergänzen.",
+  //   name: "Name",
+  //   role: "Lektorat / Testleser"
+  // }
 ];
 
 export const faqs = [

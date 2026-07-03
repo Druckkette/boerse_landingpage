@@ -908,6 +908,26 @@ h4 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.takeaways-prose {
+  display: grid;
+  gap: 18px;
+  max-width: 900px;
+}
+
+.takeaways-prose p {
+  margin: 0;
+  border-left: 3px solid var(--pine);
+  padding: 4px 0 4px 20px;
+  color: #2d3440;
+  font-size: 1.12rem;
+  line-height: 1.72;
+}
+
+.takeaways-prose strong {
+  color: var(--ink);
+  font-weight: 850;
+}
+
 .takeaways-closing {
   max-width: 840px;
   margin: 26px 0 0;
@@ -1055,6 +1075,13 @@ h4 {
   box-shadow: 0 26px 70px rgba(79, 57, 24, 0.1);
 }
 
+.lead-download-note strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1.08rem;
+  font-weight: 850;
+}
+
 .lead-form label {
   display: block;
   margin-bottom: 8px;
@@ -1126,6 +1153,49 @@ h4 {
 .purchase-section {
   background: var(--ink);
   color: var(--white);
+}
+
+.testimonial-section {
+  background: var(--white);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.testimonial-card {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(21, 24, 31, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff, #fbf7ef);
+  box-shadow: 0 24px 60px rgba(21, 24, 31, 0.05);
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  font-weight: 700;
+  line-height: 1.28;
+}
+
+.testimonial-card figcaption {
+  display: grid;
+  gap: 2px;
+  margin-top: 26px;
+  color: var(--muted);
+}
+
+.testimonial-card figcaption strong {
+  color: var(--ink);
 }
 
 .purchase-layout {
@@ -1325,7 +1395,8 @@ details p {
 
   .problem-grid,
   .three-columns,
-  .look-grid {
+  .look-grid,
+  .testimonial-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1488,6 +1559,7 @@ details p {
   .problem-grid,
   .three-columns,
   .look-grid,
+  .testimonial-grid,
   .contents-layout,
   .module-chapters,
   .process-phase-list,

@@ -15,14 +15,14 @@ export function AuthorSection() {
           <p className="section-kicker">Über den Autor</p>
           <h2 id="author-title">Dr. Aljoscha Michael Groos</h2>
           <p>
-            Dr. Aljoscha Michael Groos beschäftigt sich seit über 15 Jahren
-            aktiv mit internationalen Aktienmärkten. Sein Schwerpunkt liegt auf
-            technischer Analyse, Marktstruktur, relativer Stärke und
-            regelbasiertem Positionsmanagement.
+            Sein Interesse an der Börse begann früh mit einem eigenen Spieldepot,
+            das er noch anhand von Kursen aus der Tageszeitung pflegte. Heute
+            beschäftigt sich Dr. Aljoscha Michael Groos seit über 15 Jahren
+            aktiv mit internationalen Aktienmärkten.
           </p>
           <p>
-            Sein Interesse an der Börse begann früh mit einem eigenen Spieldepot,
-            das er noch anhand von Kursen aus der Tageszeitung pflegte. Geprägt
+            Sein Schwerpunkt liegt auf technischer Analyse, Marktstruktur,
+            relativer Stärke und regelbasiertem Positionsmanagement. Geprägt
             wurde sein Blick auf die Börse auch durch die Erfahrung, dass
             fehlendes Wissen und blinde Abhängigkeit von fremden Empfehlungen
             teuer werden können.

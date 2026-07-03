@@ -15,9 +15,9 @@ export function Hero() {
             <span className="hero-title-mobile">Investieren mit System statt Emotion.</span>
           </h1>
           <p className="hero-subtitle">
-            Der Leitfaden für Privatanleger, die Aktien nicht nach Hype,
-            Hoffnung oder Bauchgefühl handeln wollen - sondern nach klaren
-            Regeln für Marktphase, Aktienauswahl, Einstieg, Ausstieg und Risiko.
+            Für Anleger, die neben Beruf und Alltag mit festen Routinen arbeiten
+            wollen: Markt prüfen, Watchlist aktualisieren, Kaufplan vorbereiten
+            und erst handeln, wenn Regeln und Risiko zusammenpassen.
           </p>
           <ul className="hero-bullets" aria-label="Was das Buch vermittelt">
             <li>Marktphasen erkennen, bevor du blind kaufst</li>

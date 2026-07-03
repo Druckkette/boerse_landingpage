@@ -1,6 +1,10 @@
 const withBasePath = (path: string) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
+// LAUNCH BLOCKER:
+// - BOOK_LINKS müssen vor Veröffentlichung auf echte Produktseiten zeigen.
+// - LEGAL_LINKS.contact braucht die echte Kontaktadresse, sobald sie vorliegt.
+
 export const IMAGE_PATHS = {
   cover: withBasePath("assets/book-cover.jpg"),
   author: withBasePath("assets/author.jpg")
@@ -13,11 +17,8 @@ export const BOOK_LINKS = {
   bookstore: "https://www.buchhandel.de/"
 } as const;
 
-// TODO NEWSLETTER: Durch den Formular-Endpunkt von Mailchimp, Brevo, ConvertKit o. ae. ersetzen.
-export const NEWSLETTER_FORM_ENDPOINT = "";
-
 export const LEGAL_LINKS = {
-  imprint: "#impressum-platzhalter",
-  privacy: "#datenschutz-platzhalter",
-  contact: "mailto:kontakt@example.com"
+  imprint: withBasePath("impressum.html"),
+  privacy: withBasePath("datenschutz.html"),
+  contact: withBasePath("impressum.html#kontakt")
 } as const;

@@ -1,22 +1,4 @@
-import { FormEvent, useState } from "react";
-import { NEWSLETTER_FORM_ENDPOINT } from "../config/links";
-import { trackEvent } from "../lib/tracking";
-
 export function LeadMagnetSection() {
-  const [status, setStatus] = useState("");
-  const isNewsletterReady = Boolean(NEWSLETTER_FORM_ENDPOINT);
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    trackEvent("checklist_form_submit", { configured: isNewsletterReady });
-
-    if (!isNewsletterReady) {
-      event.preventDefault();
-      setStatus(
-        "Die Checkliste wird vor dem Kampagnenstart freigeschaltet. Der Download ist noch nicht aktiv."
-      );
-    }
-  }
-
   return (
     <section className="section lead-section" id="checkliste" aria-labelledby="lead-title">
       <div className="container lead-layout">
@@ -44,45 +26,14 @@ export function LeadMagnetSection() {
             Checkliste hilft dir, genau diese Punkte vor der Order zu prüfen -
             damit aus einem spontanen Impuls ein bewusster Trade wird.
           </p>
-          <form
-            className="lead-form"
-            action={NEWSLETTER_FORM_ENDPOINT || "#checkliste"}
-            method="post"
-            onSubmit={handleSubmit}
-          >
-            {/* TODO NEWSLETTER: action, Feldnamen und Consent-Text an Mailchimp, Brevo, ConvertKit o. ae. anpassen. */}
-            <label htmlFor="email">E-Mail-Adresse</label>
-            <div className="form-row">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                inputMode="email"
-                autoComplete="email"
-                placeholder="deine@email.de"
-                required={isNewsletterReady}
-              />
-              <button className="button button-primary" type="submit">
-                {isNewsletterReady ? "Checkliste sichern" : "Download bald verfügbar"}
-              </button>
-            </div>
-            <label className="consent-row">
-              <input name="consent" type="checkbox" required={isNewsletterReady} />
-              <span>
-                Ich möchte die Checkliste und gelegentliche E-Mails zum Buch
-                erhalten. Abmeldung jederzeit möglich.
-              </span>
-            </label>
+          <div className="lead-form lead-download-note" role="status">
+            <strong>Download bald verfügbar</strong>
             <p className="form-note">
-              Kein Spam. Deine Daten werden nur für den Versand der Checkliste
-              und begleitender Buchinformationen genutzt.
+              Das Newsletter-Formular ist vorerst entfernt. Die Checkliste wird
+              eingebunden, sobald Download, Versand und Datenschutztexte final
+              konfiguriert sind.
             </p>
-            {status ? (
-              <p className="form-status" role="status">
-                {status}
-              </p>
-            ) : null}
-          </form>
+          </div>
         </div>
       </div>
     </section>

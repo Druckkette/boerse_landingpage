@@ -11,11 +11,19 @@ export function TakeawaysSection() {
             schützt.
           </h2>
         </div>
-        <ul className="check-list takeaways-grid">
-          {takeaways.map((takeaway) => (
-            <li key={takeaway}>{takeaway}</li>
+        <div className="takeaways-prose">
+          {takeaways.map((paragraph, paragraphIndex) => (
+            <p key={paragraphIndex}>
+              {paragraph.segments.map((segment, segmentIndex) =>
+                segment.bold ? (
+                  <strong key={segmentIndex}>{segment.text}</strong>
+                ) : (
+                  <span key={segmentIndex}>{segment.text}</span>
+                )
+              )}
+            </p>
           ))}
-        </ul>
+        </div>
         <p className="takeaways-closing">
           Das Ziel ist nicht, jede Bewegung perfekt zu erwischen. Das Ziel ist,
           bessere Entscheidungen wiederholbar zu machen.
