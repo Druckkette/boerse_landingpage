@@ -1,4 +1,5 @@
 import { BOOK_LINKS } from "../config/links";
+import { affiliateDisclosure } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 const purchaseLinks = [
@@ -43,6 +44,7 @@ export function PurchaseSection() {
             ))}
           </div>
           <p className="purchase-note">Verfügbarkeit und Preise können je nach Anbieter variieren.</p>
+          <p className="purchase-affiliate-note">{affiliateDisclosure}</p>
         </div>
       </div>
     </section>

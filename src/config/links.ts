@@ -10,10 +10,10 @@ export const IMAGE_PATHS = {
   author: withBasePath("assets/author.jpg")
 } as const;
 
-// TODO LINKS: Produktlinks ersetzen, sobald die finalen Shop- und Buchhandelsseiten live sind.
+// TODO LINKS: Springer- und Buchhandelslinks ersetzen, sobald die finalen Seiten live sind.
 export const BOOK_LINKS = {
   springer: "https://www.springer.com/",
-  amazon: "https://www.amazon.de/",
+  amazon: "https://amzn.to/4y4nI2a",
   bookstore: "https://www.buchhandel.de/"
 } as const;
 
