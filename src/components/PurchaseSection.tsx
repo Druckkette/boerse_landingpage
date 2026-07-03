@@ -4,8 +4,7 @@ import { trackEvent } from "../lib/tracking";
 
 const purchaseLinks = [
   { label: "Bei Springer ansehen", href: BOOK_LINKS.springer, channel: "springer", variant: "primary" },
-  { label: "Bei Amazon ansehen", href: BOOK_LINKS.amazon, channel: "amazon", variant: "secondary" },
-  { label: "Im Buchhandel suchen", href: BOOK_LINKS.bookstore, channel: "bookstore", variant: "tertiary" }
+  { label: "Bei Amazon ansehen", href: BOOK_LINKS.amazon, channel: "amazon", variant: "secondary" }
 ];
 
 export function PurchaseSection() {

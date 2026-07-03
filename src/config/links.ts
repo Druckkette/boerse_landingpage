@@ -2,7 +2,6 @@ const withBasePath = (path: string) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
 // LAUNCH BLOCKER:
-// - BOOK_LINKS müssen vor Veröffentlichung auf echte Produktseiten zeigen.
 // - LEGAL_LINKS.contact braucht die echte Kontaktadresse, sobald sie vorliegt.
 
 export const IMAGE_PATHS = {
@@ -10,11 +9,9 @@ export const IMAGE_PATHS = {
   author: withBasePath("assets/author.jpg")
 } as const;
 
-// TODO LINKS: Springer- und Buchhandelslinks ersetzen, sobald die finalen Seiten live sind.
 export const BOOK_LINKS = {
-  springer: "https://www.springer.com/",
-  amazon: "https://amzn.to/4y4nI2a",
-  bookstore: "https://www.buchhandel.de/"
+  springer: "https://link.springer.com/book/9783658518509",
+  amazon: "https://amzn.to/4y4nI2a"
 } as const;
 
 export const LEGAL_LINKS = {
