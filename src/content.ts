@@ -10,24 +10,9 @@ export const problems = [
       "FOMO führt zu Käufen weit über dem sinnvollen Einstiegspunkt. Der Plan entsteht erst, wenn der Trade schon läuft."
   },
   {
-    thought: "Ich nehme den Gewinn lieber schnell mit.",
-    pattern:
-      "Gewinner werden zu früh verkauft, während Verlierer zu lange gehalten werden. Das Chance-Risiko-Verhältnis kippt."
-  },
-  {
     thought: "Der Markt sieht doch stark aus.",
     pattern:
       "Ein Index kann stabil wirken, obwohl die Marktbreite bröckelt und nur noch wenige Schwergewichte tragen."
-  },
-  {
-    thought: "Ich kaufe erst einmal und setze den Stopp später.",
-    pattern:
-      "Ohne vorher definierten Ausstieg wird jede Korrektur zur emotionalen Verhandlung."
-  },
-  {
-    thought: "Diesmal ist es anders.",
-    pattern:
-      "Angst, Gier und Hoffnung verändern sich nicht. Sie zeigen sich nur in neuen Geschichten, neuen Hypes und neuen Charts."
   }
 ];
 
@@ -76,44 +61,24 @@ export const processSteps = [
 
 export const bookContents = [
   {
-    title: "Psychologie & Mindset",
+    title: "Markt & Psychologie verstehen",
     text:
-      "Warum Angst, Gier und Hoffnung seit Jahrhunderten dieselben Fehler erzeugen - und wie du mentale Energie, Disziplin und Routinen schützt."
+      "Warum Angst, Gier, Hoffnung und Marktphasen deine Entscheidungen prägen."
   },
   {
-    title: "Den Markt verstehen",
+    title: "Aktien systematisch auswählen",
     text:
-      "Wie Marktzyklen entstehen, woran du Akkumulation, Aufwärtstrend, Distribution und Abwärtstrend erkennst und warum Marktbreite entscheidend ist."
+      "Wie du aus tausenden Aktien Kandidaten mit Qualität, Stärke und passendem Chartbild filterst."
   },
   {
-    title: "Aktienauswahl",
+    title: "Einstieg, Ausstieg und Risiko planen",
     text:
-      "Wie du aus tausenden Aktien eine kurze Liste echter Kandidaten machst - über Sektoren, Industriegruppen, fundamentale Kennzahlen, relative Stärke und Watchlists."
+      "Wie du Kaufzone, Stopp, Positionsgröße und Verkaufslogik vor dem Kauf definierst."
   },
   {
-    title: "Chartanalyse",
+    title: "Routinen aufbauen und aus Trades lernen",
     text:
-      "Wie du Kerzen, Volumen, gleitende Durchschnitte, Basismuster und Warnsignale liest, damit Einstiege und Stopps nicht zufällig entstehen."
-  },
-  {
-    title: "Kaufregeln",
-    text:
-      "Warum du nur kaufst, wenn Markt, Aktie, Chart, Volumen, Risiko und Timing zusammenpassen - und warum Nachkaufen in Schwäche tabu ist."
-  },
-  {
-    title: "Verkaufsregeln",
-    text:
-      "Wie du Verluste begrenzt, Gewinne in Stärke sicherst und bei Schwächesignalen konsequent handelst, statt Buchgewinne wieder abzugeben."
-  },
-  {
-    title: "Risiko- & Portfoliomanagement",
-    text:
-      "Wie du Positionsgrößen, Stopps, Cashquote, Quartalszahlen und Depotentwicklung steuerst, damit ein einzelner Trade dein System nicht zerstört."
-  },
-  {
-    title: "Lernen aus Trades",
-    text:
-      "Wie du mit Handelstagebuch, Screenshots, Ex-post-Analyse und täglichen sowie wöchentlichen Routinen deine eigene Entscheidungsqualität verbesserst."
+      "Wie du mit Checklisten, Handelstagebuch und Wochenroutine bessere Entscheidungen wiederholbar machst."
   }
 ];
 
@@ -193,28 +158,10 @@ export const lookInsideItems = [
       "Marktphase, relative Stärke, Volumen, Basismuster, Abstand zum Kaufpunkt und Quartalszahlen werden vor dem Kauf geprüft."
   },
   {
-    label: "Beispiel-Routine",
-    title: "30 bis 45 Minuten Börsenalltag",
-    text:
-      "Die Inhalte sind so angelegt, dass sie auch neben dem Beruf umsetzbar bleiben - mit festen Abläufen statt Dauerbeobachtung."
-  },
-  {
     label: "Beispiel-Warnsignal",
     title: "Wenn Stärke zur Distribution wird",
     text:
       "Du lernst, wann hohe Kurse nicht mehr Stärke bedeuten, sondern Abgabedruck, Fehlausbrüche oder nachlassende Marktbreite anzeigen."
-  },
-  {
-    label: "Beispiel-Lernschleife",
-    title: "Aus jedem Trade lernen",
-    text:
-      "Käufe, Verkäufe, Emotionen, Marktumfeld und Regelverstöße werden dokumentiert, damit aus Erfahrung ein belastbares System entsteht."
-  },
-  {
-    label: "Beispiel-Rechnung",
-    title: "Positionsgröße vor dem Kauf festlegen",
-    text:
-      "Bei 20.000 Euro Depot, 1 % maximalem Depotrisiko und 8 % Stopp-Abstand liegt das Risiko bei 200 Euro; daraus ergibt sich die Positionsgröße, nicht aus Gefühl."
   }
 ];
 
@@ -236,6 +183,16 @@ export const affiliateDisclosure =
   "Der Amazon-Link ist ein Affiliate-Link. Wenn du über diesen Link kaufst, kann eine Provision entstehen; für dich ändert sich der Preis dadurch nicht.";
 
 export const faqs = [
+  {
+    question: "Für wen ist das Buch geeignet?",
+    answer:
+      "Für Privatanleger, berufstätige Anleger, strukturierte Einsteiger und Fortgeschrittene, die Einzelaktien nicht nur kaufen, sondern verstehen, auswählen, timen und managen wollen."
+  },
+  {
+    question: "Für wen ist das Buch nicht geeignet?",
+    answer:
+      "Nicht passend ist es, wenn du schnelle Aktientipps ohne eigenes Denken suchst, garantierte Renditen erwartest oder ohne Regeln in Hypes springen möchtest."
+  },
   {
     question: "Ist das Buch eine Anlageberatung?",
     answer:

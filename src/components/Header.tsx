@@ -9,10 +9,9 @@ export function Header() {
           <span>Börse ohne Bauchgefühl</span>
         </a>
         <nav className="nav-links" aria-label="Hauptnavigation">
-          <a href="#prozess">Prozess</a>
           <a href="#inhalte">Inhalte</a>
-          <a href="#zielgruppe">Für wen</a>
           <a href="#autor">Autor</a>
+          <a href="#kaufen">Kaufen</a>
           <a href="#faq">FAQ</a>
         </nav>
         <a

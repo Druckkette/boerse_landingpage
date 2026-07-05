@@ -20,14 +20,17 @@ export function ProblemSection() {
           </p>
         </div>
         <div className="card-grid problem-grid">
-          {problems.map((problem, index) => (
+          {problems.map((problem) => (
             <article className="problem-card" key={problem.thought}>
-              <span className="card-number">{String(index + 1).padStart(2, "0")}</span>
               <blockquote>{problem.thought}</blockquote>
               <p>{problem.pattern}</p>
             </article>
           ))}
         </div>
+        <p className="problem-promise">
+          Das Buch setzt genau an dieser Stelle an: aus Impuls, Hoffnung und
+          Marktgeräusch wird ein prüfbarer Ablauf mit klaren Regeln.
+        </p>
       </div>
     </section>
   );

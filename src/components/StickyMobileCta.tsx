@@ -6,7 +6,7 @@ export function StickyMobileCta() {
 
   useEffect(() => {
     const updateVisibility = () => {
-      const blockingArea = document.querySelector("#checkliste, #kaufen, footer");
+      const blockingArea = document.querySelector("#kaufen, footer");
       const isBlockingVisible = blockingArea
         ? blockingArea.getBoundingClientRect().top < window.innerHeight - 80
         : false;
