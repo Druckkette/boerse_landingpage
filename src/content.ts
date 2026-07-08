@@ -61,44 +61,53 @@ export const processSteps = [
 
 export const bookContents = [
   {
-    title: "Mindset statt Bauchgefühl",
+    title: "Psychologie und Mindset",
+    lead: "Du erkennst deine größten Gegner: Angst, Gier und Hoffnung.",
     text:
-      "Warum Angst, Gier und Hoffnung die größten Fehlerquellen an der Börse sind - und wie klare Regeln, Routinen und Mental Capital helfen, diszipliniert zu bleiben."
+      "Du lernst, warum Verluste emotional stärker wirken als Gewinne, warum viele Anleger schwache Aktien zu lange halten und warum ständiges Depot-Checken dein mentales Kapital verbraucht. Ziel ist, dass du nicht impulsiv reagierst, sondern auch in schwierigen Marktphasen handlungsfähig bleibst."
   },
   {
-    title: "Den Markt richtig lesen",
+    title: "Den Markt verstehen",
+    lead: "Du lernst, wann der Markt Rückenwind gibt - und wann er gegen dich arbeitet.",
     text:
-      "Wie du Marktzyklen, Korrekturen, Trendwenden, Aufwärtstrends und Marktbreite einordnest, bevor du einzelne Aktien kaufst."
+      "Märkte bewegen sich in Zyklen: Akkumulation, Aufwärtstrend, Distribution und Abwärtstrend. Das Buch zeigt dir, wie du diese Phasen im Kurs- und Volumenverhalten erkennst, wie sich Korrekturen ankündigen und warum Marktbreite wichtig ist. Ein Index kann stark aussehen, obwohl nur wenige Schwergewichte ihn tragen. Genau diesen Blick unter die Haube lernst du."
   },
   {
-    title: "Die richtigen Aktien finden",
+    title: "Aktienauswahl",
+    lead: "Du findest nicht irgendeine Aktie - sondern die richtigen Kandidaten.",
     text:
-      "Vom Gesamtmarkt zur Einzelaktie: Branchen, Sektoren, Aktienkategorien, fundamentale Kennzahlen, technische Stärke, Volatilität und Watchlist-Aufbau."
+      "Ein Aufwärtstrend im Index ist nur Rückenwind. Die eigentliche Stärke entsteht durch wenige Aktien, die den Markt anführen. Deshalb lernst du, Aktien nach Branche, Sektor, Kategorie, Lebenszyklus, relativer Stärke, Fundamentaldaten, technischen Kennzahlen und Volatilität einzuordnen. Aus tausenden Aktien wird so eine kurze, fokussierte Watchlist."
   },
   {
-    title: "Charts verstehen und Setups erkennen",
+    title: "Chartanalyse",
+    lead: "Du übersetzt Kursbewegungen in ein klares Bild.",
     text:
-      "Kurs, Volumen, Kerzen, gleitende Durchschnitte, Basismuster, Warnsignale und positive Signale werden in ein klares Analysebild übersetzt."
+      "Du lernst, Chartkerzen, Volumen, gleitende Durchschnitte und Basismuster wie Cup-with-Handle, Double Bottom oder Boxmuster zu lesen. Entscheidend ist nicht, ob ein Chart gut aussieht, sondern ob Timing, Nachfrage und Risiko zusammenpassen. Das Kapitel zeigt dir auch Warnzeichen, positive Signale und eine Checkliste für die tägliche Analyse."
   },
   {
-    title: "Kaufregeln und Einstiegssignale",
+    title: "Kaufregeln",
+    lead:
+      "Du kaufst nicht, weil eine Aktie spannend klingt - sondern weil die Voraussetzungen stimmen.",
     text:
-      "Wann ein Kauf wirklich sinnvoll ist: Ausbrüche, relative Stärke, Volumen, Pyramidenkäufe, Gap-Ups und der Umgang mit Signalen direkt nach dem Einstieg."
+      "Das Buch zeigt dir klare Einstiegssignale: Ausbrüche aus Basen, Rückläufe an gleitende Durchschnitte, relative Stärke, Volumenbestätigung und gestaffelten Positionsaufbau. Eine zentrale Regel: Du kaufst nicht in Schwäche und jagst Aktien nicht hinterher, wenn sie bereits zu weit vom optimalen Kaufpunkt entfernt sind."
   },
   {
     title: "Verkaufsregeln und Gewinnsicherung",
+    lead: "Du lernst, gute Trades nicht wieder in schlechte Trades zu verwandeln.",
     text:
-      "Wie Gewinne gesichert und Verluste begrenzt werden: definierte Verlustgrenzen, offensives Verkaufen in Stärke und defensives Verkaufen bei Schwäche."
+      "Viele Anleger beschäftigen sich intensiv mit dem Kauf - aber kaum mit dem Verkauf. Dabei entscheidet der Ausstieg oft über die Qualität des gesamten Trades. Du lernst drei Verkaufsarten: den Verkauf nach definierter Verlusthöhe, den Verkauf in Stärke zur Gewinnsicherung und den Verkauf in Schwäche, wenn ein Trend kippt."
   },
   {
     title: "Risiko- und Portfoliomanagement",
+    lead: "Du schützt dein Kapital, bevor du an Gewinnmaximierung denkst.",
     text:
-      "Positionsgrößen, Stopps, Depotrisiko, Beta, ATR, Cashquote und Quartalszahlen - also der Teil, der verhindert, dass einzelne Fehler das Depot ruinieren."
+      "Das Buch macht deutlich: Gute Aktien reichen nicht, wenn das Risikomanagement nicht stimmt. Du lernst, Verluste früh zu begrenzen, Positionsgrößen sinnvoll zu wählen, Portfolio-Risiken über Volatilität, ATR und Beta zu steuern und besondere Ereignisse wie Quartalszahlen einzuordnen."
   },
   {
-    title: "Aus Trades lernen und besser werden",
+    title: "Lernen aus Trades",
+    lead: "Du entwickelst dein eigenes System weiter.",
     text:
-      "Handelstagebuch, Ex-post-Analyse und tägliche sowie wöchentliche Routinen machen aus jedem Trade eine Lernschleife, damit das System mit Erfahrung stärker wird."
+      "Ein Handelstagebuch sorgt dafür, dass du nicht nur Ergebnisse siehst, sondern Ursachen erkennst. Du dokumentierst Kaufgrund, Marktumfeld, Setup, Stopp, Ziel, Emotionen, Verkauf und Ergebnis. Durch Ex-post-Analysen erkennst du wiederkehrende Fehler - etwa FOMO-Käufe, zu späte Verkäufe oder das Festhalten an alten Gewinnern."
   }
 ];
 

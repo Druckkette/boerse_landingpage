@@ -663,7 +663,7 @@ h4 {
 }
 
 .learning-module {
-  min-height: 210px;
+  min-height: 360px;
   border: 1px solid rgba(21, 24, 31, 0.1);
   border-radius: 12px;
   padding: 24px;
@@ -686,6 +686,18 @@ h4 {
 .learning-module p {
   margin-bottom: 0;
   color: #3e4652;
+}
+
+.learning-module-lead {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 1.04rem;
+  font-weight: 780;
+  line-height: 1.45;
+}
+
+.learning-module-lead + p {
+  margin-top: 0;
 }
 
 .inline-purchase-cta {
@@ -1698,6 +1710,7 @@ details p {
   }
 
   .problem-card,
+  .learning-module,
   .audience-card {
     min-height: auto;
   }

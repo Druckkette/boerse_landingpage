@@ -20,6 +20,7 @@ export function LookInsideSection() {
             <article className="learning-module" key={item.title}>
               <span>Modul {String(index + 1).padStart(2, "0")}</span>
               <h3>{item.title}</h3>
+              <p className="learning-module-lead">{item.lead}</p>
               <p>{item.text}</p>
             </article>
           ))}
