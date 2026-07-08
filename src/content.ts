@@ -73,7 +73,7 @@ export const bookContents = [
   {
     title: "Einstieg, Ausstieg und Risiko planen",
     text:
-      "Wie du Kaufzone, Stopp, Positionsgröße und Verkaufslogik vor dem Kauf definierst."
+      "Wie du Kaufzone, Stopp, Positionsgröße, klare Kauf- und Verkaufssignale sowie Warnzeichen nach dem Kauf definierst."
   },
   {
     title: "Routinen aufbauen und aus Trades lernen",

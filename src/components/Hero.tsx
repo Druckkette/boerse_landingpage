@@ -11,9 +11,10 @@ export function Hero() {
           <h1 id="hero-title">Börse ohne Bauchgefühl</h1>
           <p className="hero-tagline">Investieren mit System statt Emotion.</p>
           <p className="hero-subtitle">
-            Ein praxisnahes Buch für Privatanleger, die Aktien nicht nach Tipps,
-            Hype oder Hoffnung kaufen wollen, sondern nach klaren Regeln für
-            Marktphase, Auswahl, Einstieg, Ausstieg und Risiko.
+            Börse ohne Bauchgefühl zeigt dir, wie du Aktien systematisch
+            auswählst, Einstiege planst, Verluste begrenzt, Gewinne sicherst
+            und aus jedem Trade besser wirst – mit klaren Regeln statt
+            spontanen Entscheidungen.
           </p>
           <ul className="hero-bullets" aria-label="Was das Buch vermittelt">
             <li>Marktphasen erkennen, bevor du blind kaufst</li>
@@ -42,10 +43,12 @@ export function Hero() {
             </a>
             <a
               className="button button-secondary"
-              href="#blick-ins-buch"
-              onClick={() => trackEvent("book_secondary_cta_click", { target: "look_inside" })}
+              href={BOOK_LINKS.amazon}
+              target="_blank"
+              rel="sponsored noreferrer"
+              onClick={() => trackEvent("book_outbound_click", { channel: "amazon_hero" })}
             >
-              Blick ins Buch
+              Bei Amazon ansehen
             </a>
           </div>
           <p className="hero-trust">
