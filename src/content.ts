@@ -61,24 +61,44 @@ export const processSteps = [
 
 export const bookContents = [
   {
-    title: "Markt & Psychologie verstehen",
+    title: "Mindset statt Bauchgefühl",
     text:
-      "Warum Angst, Gier, Hoffnung und Marktphasen deine Entscheidungen prägen."
+      "Warum Angst, Gier und Hoffnung die größten Fehlerquellen an der Börse sind - und wie klare Regeln, Routinen und Mental Capital helfen, diszipliniert zu bleiben."
   },
   {
-    title: "Aktien systematisch auswählen",
+    title: "Den Markt richtig lesen",
     text:
-      "Wie du aus tausenden Aktien Kandidaten mit Qualität, Stärke und passendem Chartbild filterst."
+      "Wie du Marktzyklen, Korrekturen, Trendwenden, Aufwärtstrends und Marktbreite einordnest, bevor du einzelne Aktien kaufst."
   },
   {
-    title: "Einstieg, Ausstieg und Risiko planen",
+    title: "Die richtigen Aktien finden",
     text:
-      "Wie du Kaufzone, Stopp, Positionsgröße, klare Kauf- und Verkaufssignale sowie Warnzeichen nach dem Kauf definierst."
+      "Vom Gesamtmarkt zur Einzelaktie: Branchen, Sektoren, Aktienkategorien, fundamentale Kennzahlen, technische Stärke, Volatilität und Watchlist-Aufbau."
   },
   {
-    title: "Routinen aufbauen und aus Trades lernen",
+    title: "Charts verstehen und Setups erkennen",
     text:
-      "Wie du mit Checklisten, Handelstagebuch und Wochenroutine bessere Entscheidungen wiederholbar machst."
+      "Kurs, Volumen, Kerzen, gleitende Durchschnitte, Basismuster, Warnsignale und positive Signale werden in ein klares Analysebild übersetzt."
+  },
+  {
+    title: "Kaufregeln und Einstiegssignale",
+    text:
+      "Wann ein Kauf wirklich sinnvoll ist: Ausbrüche, relative Stärke, Volumen, Pyramidenkäufe, Gap-Ups und der Umgang mit Signalen direkt nach dem Einstieg."
+  },
+  {
+    title: "Verkaufsregeln und Gewinnsicherung",
+    text:
+      "Wie Gewinne gesichert und Verluste begrenzt werden: definierte Verlustgrenzen, offensives Verkaufen in Stärke und defensives Verkaufen bei Schwäche."
+  },
+  {
+    title: "Risiko- und Portfoliomanagement",
+    text:
+      "Positionsgrößen, Stopps, Depotrisiko, Beta, ATR, Cashquote und Quartalszahlen - also der Teil, der verhindert, dass einzelne Fehler das Depot ruinieren."
+  },
+  {
+    title: "Aus Trades lernen und besser werden",
+    text:
+      "Handelstagebuch, Ex-post-Analyse und tägliche sowie wöchentliche Routinen machen aus jedem Trade eine Lernschleife, damit das System mit Erfahrung stärker wird."
   }
 ];
 
