@@ -3,8 +3,8 @@ import { affiliateDisclosure } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 const purchaseLinks = [
-  { label: "Bei Springer ansehen", href: BOOK_LINKS.springer, channel: "springer", variant: "primary" },
-  { label: "Bei Amazon ansehen", href: BOOK_LINKS.amazon, channel: "amazon", variant: "secondary" }
+  { label: "Bei Springer bestellen", href: BOOK_LINKS.springer, channel: "springer", variant: "primary" },
+  { label: "Bei Amazon bestellen", href: BOOK_LINKS.amazon, channel: "amazon", variant: "secondary" }
 ];
 
 export function PurchaseSection() {

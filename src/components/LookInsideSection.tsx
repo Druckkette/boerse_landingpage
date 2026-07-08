@@ -37,7 +37,7 @@ export function LookInsideSection() {
               rel="noreferrer"
               onClick={() => trackEvent("book_outbound_click", { channel: "springer_inline" })}
             >
-              Bei Springer ansehen
+              Bei Springer bestellen
             </a>
             <a
               className="button button-secondary"
@@ -46,7 +46,7 @@ export function LookInsideSection() {
               rel="sponsored noreferrer"
               onClick={() => trackEvent("book_outbound_click", { channel: "amazon_inline" })}
             >
-              Bei Amazon ansehen
+              Bei Amazon bestellen
             </a>
           </div>
         </div>

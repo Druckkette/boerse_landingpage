@@ -39,7 +39,7 @@ export function Hero() {
               rel="noreferrer"
               onClick={() => trackEvent("book_primary_cta_click", { target: "springer" })}
             >
-              Bei Springer vorbestellen
+              Bei Springer bestellen
             </a>
             <a
               className="button button-secondary"
@@ -48,7 +48,7 @@ export function Hero() {
               rel="sponsored noreferrer"
               onClick={() => trackEvent("book_outbound_click", { channel: "amazon_hero" })}
             >
-              Bei Amazon ansehen
+              Bei Amazon bestellen
             </a>
           </div>
           <p className="hero-trust">
