@@ -1,9 +1,6 @@
 const withBasePath = (path: string) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
-// LAUNCH BLOCKER:
-// - LEGAL_LINKS.contact braucht die echte Kontaktadresse, sobald sie vorliegt.
-
 export const IMAGE_PATHS = {
   cover: withBasePath("assets/book-cover.jpg"),
   author: withBasePath("assets/author.jpg")
@@ -17,5 +14,5 @@ export const BOOK_LINKS = {
 export const LEGAL_LINKS = {
   imprint: withBasePath("impressum.html"),
   privacy: withBasePath("datenschutz.html"),
-  contact: withBasePath("impressum.html#kontakt")
+  contact: "mailto:dr.michael.groos@gmail.com"
 } as const;
