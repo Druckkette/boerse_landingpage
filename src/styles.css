@@ -261,14 +261,6 @@ h3 {
   gap: 12px;
 }
 
-.affiliate-link-note {
-  max-width: 520px;
-  margin: 9px 0 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.78rem;
-  line-height: 1.45;
-}
-
 .button {
   min-height: 50px;
   display: inline-flex;
@@ -527,16 +519,6 @@ h3 {
   color: rgba(255, 255, 255, 0.65);
 }
 
-.inline-purchase-panel {
-  display: grid;
-  justify-items: end;
-}
-
-.inline-purchase-panel .affiliate-link-note {
-  max-width: 470px;
-  text-align: right;
-}
-
 .author-section {
   background: var(--paper-deep);
 }
@@ -667,10 +649,6 @@ h3 {
   flex: 1 1 190px;
 }
 
-.purchase-cta-panel .affiliate-link-note {
-  max-width: 500px;
-}
-
 .faq-section {
   background: var(--white);
 }
@@ -743,10 +721,21 @@ details p {
   gap: 24px;
 }
 
-.footer-inner p {
+.footer-notes {
   max-width: 760px;
+  display: grid;
+  gap: 7px;
+}
+
+.footer-inner p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+.footer-affiliate-note {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.74rem !important;
+  line-height: 1.45;
 }
 
 .footer-inner nav {
@@ -950,16 +939,6 @@ details p {
     gap: 24px;
     margin-top: 32px;
     padding: 26px 22px;
-  }
-
-  .inline-purchase-panel {
-    width: 100%;
-    justify-items: stretch;
-  }
-
-  .inline-purchase-panel .affiliate-link-note {
-    max-width: none;
-    text-align: left;
   }
 
   .inline-purchase-cta strong {

@@ -1,5 +1,4 @@
 import { BOOK_LINKS, IMAGE_PATHS } from "../config/links";
-import { affiliateDisclosure } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 export function Hero() {
@@ -38,7 +37,6 @@ export function Hero() {
               Bei Springer bestellen
             </a>
           </div>
-          <p className="affiliate-link-note">{affiliateDisclosure}</p>
           <p className="hero-trust">
             Springer-Fachbuch · Praxisnah · Regelbasiert
           </p>
