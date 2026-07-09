@@ -1,4 +1,5 @@
 import { BOOK_LINKS, IMAGE_PATHS } from "../config/links";
+import { affiliateDisclosure } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 export function Hero() {
@@ -19,6 +20,16 @@ export function Hero() {
           <div className="hero-actions" aria-label="Primäre Aktionen">
             <a
               className="button button-primary"
+              href={BOOK_LINKS.amazon}
+              target="_blank"
+              rel="sponsored noreferrer"
+              aria-label="Bei Amazon bestellen (Affiliate-Link)"
+              onClick={() => trackEvent("book_outbound_click", { channel: "amazon_hero" })}
+            >
+              Bei Amazon bestellen*
+            </a>
+            <a
+              className="button button-primary"
               href={BOOK_LINKS.springer}
               target="_blank"
               rel="noreferrer"
@@ -26,16 +37,8 @@ export function Hero() {
             >
               Bei Springer bestellen
             </a>
-            <a
-              className="button button-secondary"
-              href={BOOK_LINKS.amazon}
-              target="_blank"
-              rel="sponsored noreferrer"
-              onClick={() => trackEvent("book_outbound_click", { channel: "amazon_hero" })}
-            >
-              Bei Amazon bestellen
-            </a>
           </div>
+          <p className="affiliate-link-note">{affiliateDisclosure}</p>
           <p className="hero-trust">
             Springer-Fachbuch · Praxisnah · Regelbasiert
           </p>

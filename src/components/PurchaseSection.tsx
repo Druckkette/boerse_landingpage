@@ -3,8 +3,8 @@ import { affiliateDisclosure } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 const purchaseLinks = [
-  { label: "Bei Springer bestellen", href: BOOK_LINKS.springer, channel: "springer", variant: "primary" },
-  { label: "Bei Amazon bestellen", href: BOOK_LINKS.amazon, channel: "amazon", variant: "secondary" }
+  { label: "Bei Amazon bestellen*", href: BOOK_LINKS.amazon, channel: "amazon", variant: "primary" },
+  { label: "Bei Springer bestellen", href: BOOK_LINKS.springer, channel: "springer", variant: "primary" }
 ];
 
 export function PurchaseSection() {
@@ -35,15 +35,19 @@ export function PurchaseSection() {
                 href={link.href}
                 key={link.channel}
                 target="_blank"
-                rel="noreferrer"
+                rel={link.channel === "amazon" ? "sponsored noreferrer" : "noreferrer"}
+                aria-label={
+                  link.channel === "amazon"
+                    ? "Bei Amazon bestellen (Affiliate-Link)"
+                    : undefined
+                }
                 onClick={() => trackEvent("book_outbound_click", { channel: link.channel })}
               >
                 {link.label}
               </a>
             ))}
           </div>
-          <p className="purchase-note">Verfügbarkeit und Preise können je nach Anbieter variieren.</p>
-          <p className="purchase-affiliate-note">{affiliateDisclosure}</p>
+          <p className="affiliate-link-note">{affiliateDisclosure}</p>
         </div>
       </div>
     </section>

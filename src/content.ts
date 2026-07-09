@@ -209,7 +209,7 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const affiliateDisclosure =
-  "Der Amazon-Link ist ein Affiliate-Link. Wenn du über diesen Link kaufst, kann eine Provision entstehen; für dich ändert sich der Preis dadurch nicht.";
+  "* Amazon-Partnerlink (Affiliate-Link): Bei einem Kauf kann eine Provision entstehen; dein Preis bleibt unverändert. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.";
 
 export const faqs = [
   {

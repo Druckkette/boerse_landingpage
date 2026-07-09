@@ -1,4 +1,4 @@
-import { bookContents } from "../content";
+import { affiliateDisclosure, bookContents } from "../content";
 import { BOOK_LINKS } from "../config/links";
 import { trackEvent } from "../lib/tracking";
 
@@ -30,25 +30,29 @@ export function LookInsideSection() {
             <strong>Ein klarer Prozess beginnt mit dem ersten Kapitel.</strong>
             <p>Bestelle das Buch direkt bei Springer oder Amazon.</p>
           </div>
-          <div className="inline-purchase-actions">
-            <a
-              className="button button-primary"
-              href={BOOK_LINKS.springer}
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => trackEvent("book_outbound_click", { channel: "springer_inline" })}
-            >
-              Bei Springer bestellen
-            </a>
-            <a
-              className="button button-secondary"
-              href={BOOK_LINKS.amazon}
-              target="_blank"
-              rel="sponsored noreferrer"
-              onClick={() => trackEvent("book_outbound_click", { channel: "amazon_inline" })}
-            >
-              Bei Amazon bestellen
-            </a>
+          <div className="inline-purchase-panel">
+            <div className="inline-purchase-actions">
+              <a
+                className="button button-primary"
+                href={BOOK_LINKS.amazon}
+                target="_blank"
+                rel="sponsored noreferrer"
+                aria-label="Bei Amazon bestellen (Affiliate-Link)"
+                onClick={() => trackEvent("book_outbound_click", { channel: "amazon_inline" })}
+              >
+                Bei Amazon bestellen*
+              </a>
+              <a
+                className="button button-primary"
+                href={BOOK_LINKS.springer}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => trackEvent("book_outbound_click", { channel: "springer_inline" })}
+              >
+                Bei Springer bestellen
+              </a>
+            </div>
+            <p className="affiliate-link-note">{affiliateDisclosure}</p>
           </div>
         </div>
       </div>
