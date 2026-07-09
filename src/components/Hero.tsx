@@ -7,30 +7,15 @@ export function Hero() {
       <div className="hero-overlay" aria-hidden="true" />
       <div className="container hero-inner">
         <div className="hero-copy">
-          <p className="eyebrow">Börsenbuch von Dr. Aljoscha Michael Groos</p>
+          <p className="eyebrow">Regelbasiertes Börsenbuch</p>
+          <p className="hero-kicker">Investieren mit System statt Emotion.</p>
           <h1 id="hero-title">Börse ohne Bauchgefühl</h1>
-          <p className="hero-tagline">Investieren mit System statt Emotion.</p>
           <p className="hero-subtitle">
             Börse ohne Bauchgefühl zeigt dir, wie du Aktien systematisch
             auswählst, Einstiege planst, Verluste begrenzt, Gewinne sicherst
             und aus jedem Trade besser wirst – mit klaren Regeln statt
             spontanen Entscheidungen.
           </p>
-          <ul className="hero-bullets" aria-label="Was das Buch vermittelt">
-            <li>Marktphasen erkennen, bevor du blind kaufst</li>
-            <li>Aktien strukturiert filtern statt Tipps hinterherlaufen</li>
-            <li>Einstiege, Stopps und Verkäufe vor dem Kauf planen</li>
-          </ul>
-        </div>
-        <figure className="hero-visual" aria-label="Buchcover">
-          <img
-            className="hero-cover"
-            src={IMAGE_PATHS.cover}
-            alt="Buchcover Börse ohne Bauchgefühl von Dr. Aljoscha Michael Groos"
-            loading="eager"
-          />
-        </figure>
-        <div className="hero-conversion">
           <div className="hero-actions" aria-label="Primäre Aktionen">
             <a
               className="button button-primary"
@@ -52,9 +37,24 @@ export function Hero() {
             </a>
           </div>
           <p className="hero-trust">
-            Springer-Fachbuch · Praxisnah · Regelbasiert · Für Privatanleger
+            Springer-Fachbuch · Praxisnah · Regelbasiert
           </p>
+          <ul className="hero-bullets" aria-label="Was das Buch vermittelt">
+            <li>Marktphasen erkennen</li>
+            <li>Aktien strukturiert filtern</li>
+            <li>Käufe und Verkäufe planen</li>
+          </ul>
         </div>
+        <figure className="hero-visual" aria-label="Buchcover">
+          <div className="hero-book-stage">
+            <img
+              className="hero-cover"
+              src={IMAGE_PATHS.cover}
+              alt="Buchcover Börse ohne Bauchgefühl von Dr. Aljoscha Michael Groos"
+              loading="eager"
+            />
+          </div>
+        </figure>
       </div>
     </section>
   );

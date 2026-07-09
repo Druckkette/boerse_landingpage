@@ -7,8 +7,8 @@ export function ProblemSection() {
         <div className="section-heading narrow">
           <p className="section-kicker">Das eigentliche Risiko</p>
           <h2 id="problem-title">
-            Viele Anleger verlieren nicht wegen fehlender Informationen -
-            sondern wegen schlechter Entscheidungen.
+            Nicht der Informationsmangel ist das Problem. Sondern die Entscheidung
+            im falschen Moment.
           </h2>
           <p>
             Heute kann jeder in wenigen Minuten ein Depot eröffnen. Das Problem

@@ -7,12 +7,12 @@ export function LookInsideSection() {
     <section className="section contents-section" id="inhalte" aria-labelledby="contents-title">
       <div className="container">
         <div className="section-heading narrow">
-          <p className="section-kicker">Inhalte des Buchs</p>
-          <h2 id="contents-title">Das lernst du im Buch</h2>
+          <p className="section-kicker">Der Fahrplan</p>
+          <h2 id="contents-title">8 Module für deinen Investmentprozess</h2>
           <p>
-            Der rote Faden ist bewusst einfach: erst Markt und eigenes Verhalten
-            verstehen, dann Aktien filtern, anschließend Einstieg, Ausstieg und
-            Risiko planen und am Ende aus den eigenen Trades lernen.
+            Von Psychologie und Marktphase über Aktienauswahl und Chartanalyse
+            bis zu Kauf-, Verkaufs- und Risikoregeln: Die Kapitel bauen aufeinander
+            auf und führen zu einer wiederholbaren Routine.
           </p>
         </div>
         <div className="learning-modules">
@@ -27,8 +27,8 @@ export function LookInsideSection() {
         </div>
         <div className="inline-purchase-cta" aria-label="Buch kaufen">
           <div>
-            <strong>Bereit für einen klareren Investmentprozess?</strong>
-            <p>Der direkte Einstieg zum Buch, bevor die Details kommen.</p>
+            <strong>Ein klarer Prozess beginnt mit dem ersten Kapitel.</strong>
+            <p>Bestelle das Buch direkt bei Springer oder Amazon.</p>
           </div>
           <div className="inline-purchase-actions">
             <a

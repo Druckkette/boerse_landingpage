@@ -12,8 +12,8 @@ export function PurchaseSection() {
     <section className="section purchase-section" id="kaufen" aria-labelledby="purchase-title">
       <div className="container purchase-layout">
         <div>
-          <p className="section-kicker">Buch vorbestellen</p>
-          <h2 id="purchase-title">Börse ohne Bauchgefühl</h2>
+          <p className="section-kicker">Jetzt bestellen</p>
+          <h2 id="purchase-title">Dein Prozess beginnt vor dem nächsten Kauf.</h2>
           <p>
             Für Anleger, die nicht den nächsten heißen Tipp suchen, sondern
             einen klaren Prozess: Markt verstehen, Aktien auswählen, Einstiege

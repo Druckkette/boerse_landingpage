@@ -19,7 +19,7 @@ export function Header() {
           href="#kaufen"
           onClick={() => trackEvent("book_header_cta_click", { target: "purchase" })}
         >
-          Buch vorbestellen
+          Jetzt bestellen
         </a>
       </div>
     </header>
