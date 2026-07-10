@@ -2,12 +2,12 @@ import { bookContents } from "../content";
 import { BOOK_LINKS } from "../config/links";
 import { trackEvent } from "../lib/tracking";
 
-export function LookInsideSection() {
+export function BookContentsSection() {
   return (
     <section className="section contents-section" id="inhalte" aria-labelledby="contents-title">
       <div className="container">
         <div className="section-heading narrow">
-          <p className="section-kicker">Der Fahrplan</p>
+          <p className="section-kicker">Die Inhalte</p>
           <h2 id="contents-title">8 Module für deinen Investmentprozess</h2>
           <p>
             Von Psychologie und Marktphase über Aktienauswahl und Chartanalyse
@@ -17,18 +17,26 @@ export function LookInsideSection() {
         </div>
         <div className="learning-modules">
           {bookContents.map((item, index) => (
-            <article className="learning-module" key={item.title}>
-              <span>Modul {String(index + 1).padStart(2, "0")}</span>
-              <h3>{item.title}</h3>
-              <p className="learning-module-lead">{item.lead}</p>
-              <p>{item.text}</p>
-            </article>
+            <details className="module-details" key={item.title}>
+              <summary className="module-summary">
+                <span className="module-number">Modul {String(index + 1).padStart(2, "0")}</span>
+                <span className="module-heading">
+                  <span className="module-title" role="heading" aria-level={3}>
+                    {item.title}
+                  </span>
+                  <span className="module-lead">{item.lead}</span>
+                </span>
+              </summary>
+              <div className="module-details-content">
+                <p>{item.text}</p>
+              </div>
+            </details>
           ))}
         </div>
-        <div className="inline-purchase-cta" aria-label="Buch kaufen">
+        <div className="inline-purchase-cta" aria-label="Buch bestellen">
           <div>
             <strong>Ein klarer Prozess beginnt mit dem ersten Kapitel.</strong>
-            <p>Bestelle das Buch direkt bei Springer oder Amazon.</p>
+            <p>Das Buch direkt bei Springer oder Amazon bestellen.</p>
           </div>
           <div className="inline-purchase-actions">
             <a
@@ -42,7 +50,7 @@ export function LookInsideSection() {
               Bei Amazon bestellen*
             </a>
             <a
-              className="button button-primary"
+              className="button button-secondary"
               href={BOOK_LINKS.springer}
               target="_blank"
               rel="noreferrer"

@@ -2,7 +2,7 @@ import { trackEvent } from "../lib/tracking";
 
 export function QuickPurchaseBar() {
   return (
-    <section className="quick-purchase" aria-label="Buch vorbestellen">
+    <section className="quick-purchase" aria-label="Buch bestellen">
       <div className="container quick-purchase-inner">
         <div>
           <strong>Börse ohne Bauchgefühl</strong>
@@ -13,7 +13,7 @@ export function QuickPurchaseBar() {
           href="#kaufen"
           onClick={() => trackEvent("book_quick_purchase_click", { target: "purchase" })}
         >
-          Buch vorbestellen
+          Buch bestellen
         </a>
       </div>
     </section>

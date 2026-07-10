@@ -11,7 +11,7 @@ export function Header() {
         <nav className="nav-links" aria-label="Hauptnavigation">
           <a href="#inhalte">Inhalte</a>
           <a href="#autor">Autor</a>
-          <a href="#kaufen">Kaufen</a>
+          <a href="#kaufen">Buch bestellen</a>
           <a href="#faq">FAQ</a>
         </nav>
         <a
@@ -19,7 +19,7 @@ export function Header() {
           href="#kaufen"
           onClick={() => trackEvent("book_header_cta_click", { target: "purchase" })}
         >
-          Jetzt bestellen
+          Buch bestellen
         </a>
       </div>
     </header>

@@ -1,3 +1,62 @@
+export const bookProduct = {
+  publisher: "Springer-Fachbuch",
+  pageCount: 361,
+  colorIllustrationCount: 179,
+  monochromeIllustrationCount: 11,
+  binding: "Softcover",
+  price: "27,99 €",
+  isbn: "978-3-658-51850-9",
+  ebookFormat: "E-Book"
+} as const;
+
+export const bookProductDisplay = {
+  pages: `${bookProduct.pageCount} Seiten`,
+  illustrations: `${bookProduct.colorIllustrationCount + bookProduct.monochromeIllustrationCount} Abbildungen`,
+  illustrationDetails: `${bookProduct.colorIllustrationCount} farbige und ${bookProduct.monochromeIllustrationCount} schwarz-weiße Abbildungen`,
+  bindingAndPrice: `${bookProduct.binding} ${bookProduct.price}`,
+  ebookAvailability: `auch als ${bookProduct.ebookFormat} erhältlich`
+} as const;
+
+export const heroContent = {
+  description:
+    "Ein vollständiges, regelbasiertes System für Privatanleger - von Marktphase und Aktienauswahl über Kauf und Verkauf bis zum Risikomanagement.",
+  benefits: [
+    "Emotionale Fehlentscheidungen durch klare Regeln ersetzen",
+    "Starke Aktien systematisch auswählen und richtig timen",
+    "Verluste begrenzen und Gewinne strukturiert absichern"
+  ]
+} as const;
+
+export const purchaseContent = {
+  kicker: "Buch bestellen",
+  title: "Baue deinen eigenen regelbasierten Investmentprozess auf.",
+  description:
+    "Das Buch verbindet Marktverständnis, Aktienauswahl, Chartanalyse, Kaufregeln, Verkaufsregeln und Risikomanagement zu einem vollständigen Ablauf.",
+  facts: [
+    bookProductDisplay.pages,
+    bookProductDisplay.illustrationDetails,
+    bookProductDisplay.bindingAndPrice,
+    bookProductDisplay.ebookAvailability,
+    bookProduct.publisher,
+    "Geeignet für die Umsetzung neben dem Beruf"
+  ]
+} as const;
+
+export const authorContent = {
+  introduction:
+    "Dr. Aljoscha Michael Groos ist promovierter Wirtschaftswissenschaftler, Diplom-Wirtschaftsingenieur und verfügt über mehr als 15 Jahre praktische Erfahrung im Aktieninvestment an internationalen Börsen.",
+  background:
+    "Sein Interesse an Börse und Aktien begann früh mit einem selbst geführten Spieldepot, das er anhand von Kursen aus der Tageszeitung pflegte. Eigene Fehler, Lernschleifen und praktische Markterfahrung haben seinen Blick geschärft. Auch Verluste im familiären Umfeld während der Dotcom-Blase verstärkten die Erkenntnis, dass fehlendes Wissen und blinde Abhängigkeit von fremden Empfehlungen teuer werden können.",
+  approach:
+    "Daraus entstand der Ansatz hinter „Börse ohne Bauchgefühl“: Anlegern Finanzwissen verständlich zu vermitteln und sie dabei zu unterstützen, Entscheidungen selbstbestimmt, regelbasiert und mit einem klaren Blick auf Risiken vorzubereiten.",
+  signals: [
+    { label: "Fokus", value: "Marktstruktur & relative Stärke" },
+    { label: "Ansatz", value: "Regeln, Checklisten, Routinen" },
+    { label: "Erfahrung", value: "Über 15 Jahre Aktienmärkte" },
+    { label: "Ziel", value: "Selbstbestimmte Entscheidungen" }
+  ]
+} as const;
+
 export const problems = [
   {
     thought: "Die Aktie kommt bestimmt wieder zurück.",
@@ -173,27 +232,6 @@ export const takeaways = [
   }
 ];
 
-export const lookInsideItems = [
-  {
-    label: "Beispiel-Regel",
-    title: "Nie ohne Ausstieg kaufen",
-    text:
-      "Vor dem Einstieg steht fest, wann du falschliegst, wo dein Stopp liegt und wie groß dein maximales Risiko ist."
-  },
-  {
-    label: "Beispiel-Checkliste",
-    title: "Ist die Aktie wirklich in Position?",
-    text:
-      "Marktphase, relative Stärke, Volumen, Basismuster, Abstand zum Kaufpunkt und Quartalszahlen werden vor dem Kauf geprüft."
-  },
-  {
-    label: "Beispiel-Warnsignal",
-    title: "Wenn Stärke zur Distribution wird",
-    text:
-      "Du lernst, wann hohe Kurse nicht mehr Stärke bedeuten, sondern Abgabedruck, Fehlausbrüche oder nachlassende Marktbreite anzeigen."
-  }
-];
-
 export type Testimonial = {
   quote: string;
   name: string;
@@ -215,51 +253,36 @@ export const faqs = [
   {
     question: "Für wen ist das Buch geeignet?",
     answer:
-      "Für Privatanleger, berufstätige Anleger, strukturierte Einsteiger und Fortgeschrittene, die Einzelaktien nicht nur kaufen, sondern verstehen, auswählen, timen und managen wollen."
+      "Für Privatanleger, berufstätige Anleger, strukturierte Einsteiger und Fortgeschrittene, die einen vollständigen und wiederholbaren Investmentprozess suchen."
   },
   {
-    question: "Für wen ist das Buch nicht geeignet?",
+    question: "Ist das Buch auch für Anfänger geeignet?",
     answer:
-      "Nicht passend ist es, wenn du schnelle Aktientipps ohne eigenes Denken suchst, garantierte Renditen erwartest oder ohne Regeln in Hypes springen möchtest."
+      "Ja, wenn du bereit bist, dich ernsthaft mit Marktphase, Risiko, Aktienauswahl und Regeln auseinanderzusetzen. Es ist kein oberflächliches „Schnell reich werden“-Buch, sondern führt Schritt für Schritt durch einen strukturierten Prozess."
+  },
+  {
+    question: "Geht es eher um langfristiges Investieren oder Trading?",
+    answer:
+      "Das Buch verbindet langfristiges Denken bei der Aktienauswahl mit regelbasiertem Positionsmanagement, Kaufzeitpunkten, Verkaufsregeln und Risikobegrenzung."
+  },
+  {
+    question: "Enthält das Buch konkrete Aktienempfehlungen?",
+    answer:
+      "Nein. Das Buch enthält keine aktuellen Aktientipps oder Kaufempfehlungen. Du lernst, Kandidaten selbst zu finden, zu prüfen und zu managen."
+  },
+  {
+    question: "Wie viel Zeit brauche ich für die Umsetzung?",
+    answer:
+      "Die beschriebenen Routinen sind so aufgebaut, dass sie grundsätzlich neben dem Beruf umsetzbar sind. Als Orientierung kannst du mit etwa 30 bis 45 Minuten täglicher Beschäftigung rechnen; der tatsächliche Zeitaufwand hängt von deinem Vorgehen und der Marktlage ab."
+  },
+  {
+    question: "In welchen Formaten ist das Buch erhältlich?",
+    answer:
+      `Das Buch ist als ${bookProduct.binding} und als ${bookProduct.ebookFormat} erhältlich.`
   },
   {
     question: "Ist das Buch eine Anlageberatung?",
     answer:
-      "Nein. Das Buch gibt keine individuellen Kauf- oder Verkaufsempfehlungen. Es vermittelt einen strukturierten Prozess, mit dem du eigene Entscheidungen bewusster vorbereiten, umsetzen und nachbereiten kannst."
-  },
-  {
-    question: "Geht es um langfristiges Investieren oder Trading?",
-    answer:
-      "Das Buch verbindet langfristiges Denken mit regelbasiertem Positionsmanagement. Im Mittelpunkt stehen Aktienauswahl, Marktphase, Einstieg, Ausstieg und Risikobegrenzung - also die Frage, wie du Entscheidungen systematisch triffst."
-  },
-  {
-    question: "Ist das Buch für Anfänger geeignet?",
-    answer:
-      "Ja, wenn du bereit bist, dich ernsthaft mit Börse, Risiko und Entscheidungsprozessen auseinanderzusetzen. Das Buch startet bei Psychologie und Marktverständnis und führt Schritt für Schritt zu konkreten Regeln."
-  },
-  {
-    question: "Ist das Buch auch für Berufstätige umsetzbar?",
-    answer:
-      "Ja. Die Routinen sind so gedacht, dass du nicht permanent Kurse beobachten musst. Ziel ist ein klarer Ablauf, der mit etwa 30 bis 45 Minuten täglicher Beschäftigung vereinbar ist."
-  },
-  {
-    question: "Bekomme ich konkrete Aktienempfehlungen?",
-    answer:
-      "Nein. Der Fokus liegt nicht auf Tipps, sondern auf einem Prozess, mit dem du selbst Kandidaten findest, prüfst und managst."
-  },
-  {
-    question: "Warum spielt Psychologie eine so große Rolle?",
-    answer:
-      "Weil viele Fehler nicht aus fehlenden Informationen entstehen, sondern aus Angst, Gier, Hoffnung, FOMO oder Selbstüberschätzung. Das Buch zeigt, wie du diese Muster erkennst und durch Regeln ersetzt."
-  },
-  {
-    question: "Was unterscheidet das Buch von typischen Börsenratgebern?",
-    answer:
-      "Es behandelt nicht nur einzelne Tipps oder Kennzahlen, sondern den gesamten Ablauf: Mindset, Marktphase, Aktienauswahl, Chartanalyse, Kaufregeln, Verkaufsregeln, Risiko, Portfolio und Lernroutine."
-  },
-  {
-    question: "Verspricht das Buch höhere Renditen?",
-    answer:
-      "Nein. Es gibt kein Renditeversprechen. Ziel ist, deine Entscheidungsqualität zu verbessern, Risiken bewusster zu steuern und emotionale Fehler zu reduzieren."
+      "Nein. Das Buch bietet keine individuelle Anlage- oder Finanzberatung und ist keine Aufforderung zum Kauf oder Verkauf von Wertpapieren."
   }
 ];

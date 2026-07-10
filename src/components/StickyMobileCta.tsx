@@ -27,14 +27,14 @@ export function StickyMobileCta() {
   return (
     <aside
       className={`mobile-sticky-cta ${isVisible ? "is-visible" : ""}`}
-      aria-label="Buch vorbestellen"
+      aria-label="Buch bestellen"
     >
       <span>Börse ohne Bauchgefühl</span>
       <a
         href="#kaufen"
         onClick={() => trackEvent("book_mobile_sticky_click", { target: "purchase" })}
       >
-        Buch vorbestellen
+        Buch bestellen
       </a>
     </aside>
   );

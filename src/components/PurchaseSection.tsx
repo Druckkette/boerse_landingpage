@@ -1,9 +1,10 @@
 import { BOOK_LINKS } from "../config/links";
+import { purchaseContent } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 const purchaseLinks = [
   { label: "Bei Amazon bestellen*", href: BOOK_LINKS.amazon, channel: "amazon", variant: "primary" },
-  { label: "Bei Springer bestellen", href: BOOK_LINKS.springer, channel: "springer", variant: "primary" }
+  { label: "Bei Springer bestellen", href: BOOK_LINKS.springer, channel: "springer", variant: "secondary" }
 ];
 
 export function PurchaseSection() {
@@ -11,19 +12,13 @@ export function PurchaseSection() {
     <section className="section purchase-section" id="kaufen" aria-labelledby="purchase-title">
       <div className="container purchase-layout">
         <div>
-          <p className="section-kicker">Jetzt bestellen</p>
-          <h2 id="purchase-title">Dein Prozess beginnt vor dem nächsten Kauf.</h2>
-          <p>
-            Für Anleger, die nicht den nächsten heißen Tipp suchen, sondern
-            einen klaren Prozess: Markt verstehen, Aktien auswählen, Einstiege
-            planen, Verkäufe umsetzen, Risiken begrenzen und aus eigenen Trades
-            lernen.
-          </p>
-          <ul className="purchase-bullets">
-            <li>Praxisnaher Leitfaden für Privatanleger</li>
-            <li>Mit Checklisten, Routinen und Chartbeispielen</li>
-            <li>Von Psychologie bis Risikomanagement</li>
-            <li>Geeignet für die Umsetzung neben dem Beruf</li>
+          <p className="section-kicker">{purchaseContent.kicker}</p>
+          <h2 id="purchase-title">{purchaseContent.title}</h2>
+          <p>{purchaseContent.description}</p>
+          <ul className="purchase-facts" aria-label="Produktinformationen">
+            {purchaseContent.facts.map((fact) => (
+              <li key={fact}>{fact}</li>
+            ))}
           </ul>
         </div>
         <div className="purchase-cta-panel">

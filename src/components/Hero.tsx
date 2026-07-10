@@ -1,4 +1,5 @@
 import { BOOK_LINKS, IMAGE_PATHS } from "../config/links";
+import { bookProduct, bookProductDisplay, heroContent } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 export function Hero() {
@@ -10,12 +11,7 @@ export function Hero() {
           <p className="eyebrow">Regelbasiertes Börsenbuch</p>
           <p className="hero-kicker">Investieren mit System statt Emotion.</p>
           <h1 id="hero-title">Börse ohne Bauchgefühl</h1>
-          <p className="hero-subtitle">
-            Börse ohne Bauchgefühl zeigt dir, wie du Aktien systematisch
-            auswählst, Einstiege planst, Verluste begrenzt, Gewinne sicherst
-            und aus jedem Trade besser wirst – mit klaren Regeln statt
-            spontanen Entscheidungen.
-          </p>
+          <p className="hero-subtitle">{heroContent.description}</p>
           <div className="hero-actions" aria-label="Primäre Aktionen">
             <a
               className="button button-primary"
@@ -28,7 +24,7 @@ export function Hero() {
               Bei Amazon bestellen*
             </a>
             <a
-              className="button button-primary"
+              className="button button-secondary"
               href={BOOK_LINKS.springer}
               target="_blank"
               rel="noreferrer"
@@ -37,13 +33,23 @@ export function Hero() {
               Bei Springer bestellen
             </a>
           </div>
-          <p className="hero-trust">
-            Springer-Fachbuch · Praxisnah · Regelbasiert
-          </p>
+          <aside className="hero-product-info" aria-label="Produktinformationen zum Buch">
+            <p className="hero-product-summary">
+              <strong>{bookProduct.publisher}</strong>
+              <span>{bookProductDisplay.pages}</span>
+              <span>{bookProductDisplay.illustrations}</span>
+              <span>{bookProductDisplay.bindingAndPrice}</span>
+              <span>{bookProductDisplay.ebookAvailability}</span>
+            </p>
+            <p className="hero-product-detail">
+              <span>{bookProductDisplay.illustrationDetails}</span>
+              <span>ISBN {bookProduct.isbn}</span>
+            </p>
+          </aside>
           <ul className="hero-bullets" aria-label="Was das Buch vermittelt">
-            <li>Marktphasen erkennen</li>
-            <li>Aktien strukturiert filtern</li>
-            <li>Käufe und Verkäufe planen</li>
+            {heroContent.benefits.map((benefit) => (
+              <li key={benefit}>{benefit}</li>
+            ))}
           </ul>
         </div>
         <figure className="hero-visual" aria-label="Buchcover">
