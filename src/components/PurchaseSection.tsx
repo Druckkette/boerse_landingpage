@@ -1,4 +1,4 @@
-import { BOOK_LINKS } from "../config/links";
+import { BOOK_LINKS, IMAGE_PATHS } from "../config/links";
 import { purchaseContent } from "../content";
 import { trackEvent } from "../lib/tracking";
 
@@ -11,16 +11,23 @@ export function PurchaseSection() {
   return (
     <section className="section purchase-section" id="kaufen" aria-labelledby="purchase-title">
       <div className="container purchase-layout">
-        <div>
+        <figure className="purchase-cover">
+          <img
+            src={IMAGE_PATHS.cover}
+            alt="Buchcover „Börse ohne Bauchgefühl“ von Dr. Aljoscha Michael Groos"
+            loading="lazy"
+          />
+        </figure>
+        <div className="purchase-copy">
           <p className="section-kicker">{purchaseContent.kicker}</p>
           <h2 id="purchase-title">{purchaseContent.title}</h2>
           <p>{purchaseContent.description}</p>
-          <ul className="purchase-facts" aria-label="Produktinformationen">
-            {purchaseContent.facts.map((fact) => (
-              <li key={fact}>{fact}</li>
-            ))}
-          </ul>
         </div>
+        <ul className="purchase-facts" aria-label="Produktinformationen">
+          {purchaseContent.facts.map((fact) => (
+            <li key={fact}>{fact}</li>
+          ))}
+        </ul>
         <div className="purchase-cta-panel">
           <div className="purchase-actions">
             {purchaseLinks.map((link) => (

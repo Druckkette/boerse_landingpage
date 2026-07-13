@@ -1,17 +1,19 @@
 import { trackEvent } from "../lib/tracking";
 import { useEffect, useState } from "react";
+import { bookProduct } from "../content";
 
 export function StickyMobileCta() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const updateVisibility = () => {
-      const blockingArea = document.querySelector("#kaufen, footer");
-      const isBlockingVisible = blockingArea
-        ? blockingArea.getBoundingClientRect().top < window.innerHeight - 80
-        : false;
+      const blockingAreas = document.querySelectorAll("#kaufen, #faq, footer");
+      const isBlockingVisible = Array.from(blockingAreas).some((area) => {
+        const bounds = area.getBoundingClientRect();
+        return bounds.top < window.innerHeight - 48 && bounds.bottom > 48;
+      });
 
-      setIsVisible(window.scrollY > 420 && !isBlockingVisible);
+      setIsVisible(window.scrollY > 360 && !isBlockingVisible);
     };
 
     updateVisibility();
@@ -29,12 +31,12 @@ export function StickyMobileCta() {
       className={`mobile-sticky-cta ${isVisible ? "is-visible" : ""}`}
       aria-label="Buch bestellen"
     >
-      <span>Börse ohne Bauchgefühl</span>
+      <span>Buch bestellen · {bookProduct.price}</span>
       <a
         href="#kaufen"
         onClick={() => trackEvent("book_mobile_sticky_click", { target: "purchase" })}
       >
-        Buch bestellen
+        Bestellen
       </a>
     </aside>
   );

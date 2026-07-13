@@ -19,7 +19,7 @@ export const bookProductDisplay = {
 
 export const heroContent = {
   description:
-    "Ein vollständiges, regelbasiertes System für Privatanleger - von Marktphase und Aktienauswahl über Kauf und Verkauf bis zum Risikomanagement.",
+    "Ein vollständiges, regelbasiertes System für Privatanleger – von Marktphase und Aktienauswahl über Kauf und Verkauf bis zum Risikomanagement.",
   benefits: [
     "Emotionale Fehlentscheidungen durch klare Regeln ersetzen",
     "Starke Aktien systematisch auswählen und richtig timen",
@@ -64,7 +64,7 @@ export const problems = [
       "Hoffnung ersetzt Risikomanagement. Verluste werden ausgesessen, obwohl Kapital an anderer Stelle besser arbeiten könnte."
   },
   {
-    thought: "Alle reden darüber - ich muss jetzt rein.",
+    thought: "Alle reden darüber – ich muss jetzt rein.",
     pattern:
       "FOMO führt zu Käufen weit über dem sinnvollen Einstiegspunkt. Der Plan entsteht erst, wenn der Trade schon läuft."
   },
@@ -127,13 +127,13 @@ export const bookContents = [
   },
   {
     title: "Den Markt verstehen",
-    lead: "Du lernst, wann der Markt Rückenwind gibt - und wann er gegen dich arbeitet.",
+    lead: "Du lernst, wann der Markt Rückenwind gibt – und wann er gegen dich arbeitet.",
     text:
       "Märkte bewegen sich in Zyklen: Akkumulation, Aufwärtstrend, Distribution und Abwärtstrend. Das Buch zeigt dir, wie du diese Phasen im Kurs- und Volumenverhalten erkennst, wie sich Korrekturen ankündigen und warum Marktbreite wichtig ist. Ein Index kann stark aussehen, obwohl nur wenige Schwergewichte ihn tragen. Genau diesen Blick unter die Haube lernst du."
   },
   {
     title: "Aktienauswahl",
-    lead: "Du findest nicht irgendeine Aktie - sondern die richtigen Kandidaten.",
+    lead: "Du findest nicht irgendeine Aktie – sondern die richtigen Kandidaten.",
     text:
       "Ein Aufwärtstrend im Index ist nur Rückenwind. Die eigentliche Stärke entsteht durch wenige Aktien, die den Markt anführen. Deshalb lernst du, Aktien nach Branche, Sektor, Kategorie, Lebenszyklus, relativer Stärke, Fundamentaldaten, technischen Kennzahlen und Volatilität einzuordnen. Aus tausenden Aktien wird so eine kurze, fokussierte Watchlist."
   },
@@ -146,7 +146,7 @@ export const bookContents = [
   {
     title: "Kaufregeln",
     lead:
-      "Du kaufst nicht, weil eine Aktie spannend klingt - sondern weil die Voraussetzungen stimmen.",
+      "Du kaufst nicht, weil eine Aktie spannend klingt – sondern weil die Voraussetzungen stimmen.",
     text:
       "Das Buch zeigt dir klare Einstiegssignale: Ausbrüche aus Basen, Rückläufe an gleitende Durchschnitte, relative Stärke, Volumenbestätigung und gestaffelten Positionsaufbau. Eine zentrale Regel: Du kaufst nicht in Schwäche und jagst Aktien nicht hinterher, wenn sie bereits zu weit vom optimalen Kaufpunkt entfernt sind."
   },
@@ -154,7 +154,7 @@ export const bookContents = [
     title: "Verkaufsregeln und Gewinnsicherung",
     lead: "Du lernst, gute Trades nicht wieder in schlechte Trades zu verwandeln.",
     text:
-      "Viele Anleger beschäftigen sich intensiv mit dem Kauf - aber kaum mit dem Verkauf. Dabei entscheidet der Ausstieg oft über die Qualität des gesamten Trades. Du lernst drei Verkaufsarten: den Verkauf nach definierter Verlusthöhe, den Verkauf in Stärke zur Gewinnsicherung und den Verkauf in Schwäche, wenn ein Trend kippt."
+      "Viele Anleger beschäftigen sich intensiv mit dem Kauf – aber kaum mit dem Verkauf. Dabei entscheidet der Ausstieg oft über die Qualität des gesamten Trades. Du lernst drei Verkaufsarten: den Verkauf nach definierter Verlusthöhe, den Verkauf in Stärke zur Gewinnsicherung und den Verkauf in Schwäche, wenn ein Trend kippt."
   },
   {
     title: "Risiko- und Portfoliomanagement",
@@ -166,7 +166,7 @@ export const bookContents = [
     title: "Lernen aus Trades",
     lead: "Du entwickelst dein eigenes System weiter.",
     text:
-      "Ein Handelstagebuch sorgt dafür, dass du nicht nur Ergebnisse siehst, sondern Ursachen erkennst. Du dokumentierst Kaufgrund, Marktumfeld, Setup, Stopp, Ziel, Emotionen, Verkauf und Ergebnis. Durch Ex-post-Analysen erkennst du wiederkehrende Fehler - etwa FOMO-Käufe, zu späte Verkäufe oder das Festhalten an alten Gewinnern."
+      "Ein Handelstagebuch sorgt dafür, dass du nicht nur Ergebnisse siehst, sondern Ursachen erkennst. Du dokumentierst Kaufgrund, Marktumfeld, Setup, Stopp, Ziel, Emotionen, Verkauf und Ergebnis. Durch Ex-post-Analysen erkennst du wiederkehrende Fehler – etwa FOMO-Käufe, zu späte Verkäufe oder das Festhalten an alten Gewinnern."
   }
 ];
 

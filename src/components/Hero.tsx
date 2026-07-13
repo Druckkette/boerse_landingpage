@@ -3,14 +3,32 @@ import { bookProduct, bookProductDisplay, heroContent } from "../content";
 import { trackEvent } from "../lib/tracking";
 
 export function Hero() {
+  const bookCover = (className: string, eager = false) => (
+    <figure className={className} aria-label="Buchcover">
+      <div className="hero-book-stage">
+        <img
+          className="hero-cover"
+          src={IMAGE_PATHS.cover}
+          alt="Buchcover „Börse ohne Bauchgefühl“ von Dr. Aljoscha Michael Groos"
+          loading={eager ? "eager" : "lazy"}
+        />
+      </div>
+    </figure>
+  );
+
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="hero-overlay" aria-hidden="true" />
       <div className="container hero-inner">
         <div className="hero-copy">
-          <p className="eyebrow">Regelbasiertes Börsenbuch</p>
-          <p className="hero-kicker">Investieren mit System statt Emotion.</p>
-          <h1 id="hero-title">Börse ohne Bauchgefühl</h1>
+          <div className="hero-mobile-intro">
+            <div>
+              <p className="eyebrow">Regelbasiertes Börsenbuch</p>
+              <p className="hero-kicker">Investieren mit System statt Emotion.</p>
+              <h1 id="hero-title">Börse ohne Bauchgefühl</h1>
+            </div>
+            {bookCover("hero-mobile-cover", true)}
+          </div>
           <p className="hero-subtitle">{heroContent.description}</p>
           <div className="hero-actions" aria-label="Primäre Aktionen">
             <a
@@ -52,16 +70,7 @@ export function Hero() {
             ))}
           </ul>
         </div>
-        <figure className="hero-visual" aria-label="Buchcover">
-          <div className="hero-book-stage">
-            <img
-              className="hero-cover"
-              src={IMAGE_PATHS.cover}
-              alt="Buchcover Börse ohne Bauchgefühl von Dr. Aljoscha Michael Groos"
-              loading="eager"
-            />
-          </div>
-        </figure>
+        {bookCover("hero-visual", true)}
       </div>
     </section>
   );

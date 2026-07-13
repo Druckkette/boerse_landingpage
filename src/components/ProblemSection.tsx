@@ -15,13 +15,16 @@ export function ProblemSection() {
             ist nicht mehr der Zugang zur Börse. Das Problem ist, was danach
             passiert: Kurse laufen gegen dich, Nachrichten verunsichern dich,
             Gewinne machen euphorisch und Verluste werden schöngeredet. Genau
-            dort entscheidet sich, ob du nach Plan handelst - oder nach
+            dort entscheidet sich, ob du nach Plan handelst – oder nach
             Bauchgefühl.
           </p>
         </div>
         <div className="card-grid problem-grid">
-          {problems.map((problem) => (
+          {problems.map((problem, index) => (
             <article className="problem-card" key={problem.thought}>
+              <span className="problem-marker" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
               <blockquote>{problem.thought}</blockquote>
               <p>{problem.pattern}</p>
             </article>

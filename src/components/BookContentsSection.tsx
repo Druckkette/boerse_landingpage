@@ -1,6 +1,14 @@
+import type { KeyboardEvent } from "react";
 import { bookContents } from "../content";
 import { BOOK_LINKS } from "../config/links";
 import { trackEvent } from "../lib/tracking";
+
+const toggleDetailsWithKeyboard = (event: KeyboardEvent<HTMLElement>) => {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  event.preventDefault();
+  const details = event.currentTarget.parentElement as HTMLDetailsElement | null;
+  if (details) details.open = !details.open;
+};
 
 export function BookContentsSection() {
   return (
@@ -18,7 +26,7 @@ export function BookContentsSection() {
         <div className="learning-modules">
           {bookContents.map((item, index) => (
             <details className="module-details" key={item.title}>
-              <summary className="module-summary">
+              <summary className="module-summary" onKeyDown={toggleDetailsWithKeyboard}>
                 <span className="module-number">Modul {String(index + 1).padStart(2, "0")}</span>
                 <span className="module-heading">
                   <span className="module-title" role="heading" aria-level={3}>
