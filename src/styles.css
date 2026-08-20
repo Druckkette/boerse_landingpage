@@ -1311,6 +1311,13 @@ h3 {
     overflow-wrap: break-word;
   }
 
+  .problem-section h2 {
+    hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
   .narrow {
     margin-bottom: 34px;
     text-align: left;
