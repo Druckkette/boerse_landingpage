@@ -4,7 +4,7 @@ import { trackEvent } from "../lib/tracking";
 
 const purchaseLinks = [
   { label: "Bei Amazon bestellen*", href: BOOK_LINKS.amazon, channel: "amazon", variant: "primary" },
-  { label: "Bei Springer bestellen", href: BOOK_LINKS.springer, channel: "springer", variant: "secondary" }
+  { label: "Bei Springer bestellen*", href: BOOK_LINKS.springer, channel: "springer", variant: "secondary" }
 ];
 
 export function PurchaseSection() {
@@ -36,12 +36,8 @@ export function PurchaseSection() {
                 href={link.href}
                 key={link.channel}
                 target="_blank"
-                rel={link.channel === "amazon" ? "sponsored noreferrer" : "noreferrer"}
-                aria-label={
-                  link.channel === "amazon"
-                    ? "Bei Amazon bestellen (Affiliate-Link)"
-                    : undefined
-                }
+                rel="sponsored noreferrer"
+                aria-label={`Bei ${link.channel === "amazon" ? "Amazon" : "Springer"} bestellen (Affiliate-Link)`}
                 onClick={() => trackEvent("book_outbound_click", { channel: link.channel })}
               >
                 {link.label}

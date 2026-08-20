@@ -61,10 +61,11 @@ export function BookContentsSection() {
               className="button button-secondary"
               href={BOOK_LINKS.springer}
               target="_blank"
-              rel="noreferrer"
+              rel="sponsored noreferrer"
+              aria-label="Bei Springer bestellen (Affiliate-Link)"
               onClick={() => trackEvent("book_outbound_click", { channel: "springer_inline" })}
             >
-              Bei Springer bestellen
+              Bei Springer bestellen*
             </a>
           </div>
         </div>

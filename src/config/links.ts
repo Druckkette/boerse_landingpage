@@ -7,7 +7,7 @@ export const IMAGE_PATHS = {
 } as const;
 
 export const BOOK_LINKS = {
-  springer: "https://link.springer.com/book/9783658518509",
+  springer: "https://tidd.ly/4xNrKev",
   amazon: "https://amzn.to/4y4nI2a"
 } as const;
 
