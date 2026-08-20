@@ -45,10 +45,11 @@ export function Hero() {
               className="button button-secondary"
               href={BOOK_LINKS.springer}
               target="_blank"
-              rel="noreferrer"
+              rel="sponsored noreferrer"
+              aria-label="Bei Springer bestellen (Affiliate-Link)"
               onClick={() => trackEvent("book_primary_cta_click", { target: "springer" })}
             >
-              Bei Springer bestellen
+              Bei Springer bestellen*
             </a>
           </div>
           <aside className="hero-product-info" aria-label="Produktinformationen zum Buch">

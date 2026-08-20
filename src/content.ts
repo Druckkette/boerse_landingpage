@@ -247,7 +247,7 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const affiliateDisclosure =
-  "* Amazon-Partnerlink (Affiliate-Link): Bei einem Kauf kann eine Provision entstehen; dein Preis bleibt unverändert. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.";
+  "* Amazon- und Springer-Shop-Partnerlinks (Affiliate-Links): Bei einem Kauf kann eine Provision entstehen; dein Preis bleibt unverändert. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.";
 
 export const faqs = [
   {
