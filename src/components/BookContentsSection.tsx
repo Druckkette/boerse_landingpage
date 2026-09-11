@@ -1,7 +1,7 @@
 import type { KeyboardEvent } from "react";
 import { bookContents } from "../content";
 import { BOOK_LINKS } from "../config/links";
-import { trackEvent } from "../lib/tracking";
+import { trackBookRetailerClick, trackEvent } from "../lib/tracking";
 
 const toggleDetailsWithKeyboard = (event: KeyboardEvent<HTMLElement>) => {
   if (event.key !== "Enter" && event.key !== " ") return;
@@ -53,7 +53,10 @@ export function BookContentsSection() {
               target="_blank"
               rel="sponsored noreferrer"
               aria-label="Bei Amazon bestellen (Affiliate-Link)"
-              onClick={() => trackEvent("book_outbound_click", { channel: "amazon_inline" })}
+              onClick={() => {
+                trackEvent("book_outbound_click", { channel: "amazon_inline" });
+                trackBookRetailerClick("Amazon", BOOK_LINKS.amazon);
+              }}
             >
               Bei Amazon bestellen*
             </a>
@@ -63,7 +66,10 @@ export function BookContentsSection() {
               target="_blank"
               rel="sponsored noreferrer"
               aria-label="Bei Springer bestellen (Affiliate-Link)"
-              onClick={() => trackEvent("book_outbound_click", { channel: "springer_inline" })}
+              onClick={() => {
+                trackEvent("book_outbound_click", { channel: "springer_inline" });
+                trackBookRetailerClick("Springer", BOOK_LINKS.springer);
+              }}
             >
               Bei Springer bestellen*
             </a>

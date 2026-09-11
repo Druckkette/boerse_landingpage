@@ -1,6 +1,6 @@
 import { BOOK_LINKS, IMAGE_PATHS } from "../config/links";
 import { bookProduct, bookProductDisplay, heroContent } from "../content";
-import { trackEvent } from "../lib/tracking";
+import { trackBookRetailerClick, trackEvent } from "../lib/tracking";
 
 export function Hero() {
   const bookCover = (className: string, eager = false) => (
@@ -37,7 +37,10 @@ export function Hero() {
               target="_blank"
               rel="sponsored noreferrer"
               aria-label="Bei Amazon bestellen (Affiliate-Link)"
-              onClick={() => trackEvent("book_outbound_click", { channel: "amazon_hero" })}
+              onClick={() => {
+                trackEvent("book_outbound_click", { channel: "amazon_hero" });
+                trackBookRetailerClick("Amazon", BOOK_LINKS.amazon);
+              }}
             >
               Bei Amazon bestellen*
             </a>
@@ -47,7 +50,10 @@ export function Hero() {
               target="_blank"
               rel="sponsored noreferrer"
               aria-label="Bei Springer bestellen (Affiliate-Link)"
-              onClick={() => trackEvent("book_primary_cta_click", { target: "springer" })}
+              onClick={() => {
+                trackEvent("book_primary_cta_click", { target: "springer" });
+                trackBookRetailerClick("Springer", BOOK_LINKS.springer);
+              }}
             >
               Bei Springer bestellen*
             </a>

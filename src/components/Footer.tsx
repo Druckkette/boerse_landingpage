@@ -1,5 +1,6 @@
 import { LEGAL_LINKS } from "../config/links";
 import { affiliateDisclosure } from "../content";
+import { openConsentSettings } from "../lib/consent";
 
 export function Footer() {
   return (
@@ -16,6 +17,9 @@ export function Footer() {
         <nav aria-label="Rechtliche Links">
           <a href={LEGAL_LINKS.imprint}>Impressum</a>
           <a href={LEGAL_LINKS.privacy}>Datenschutz</a>
+          <button type="button" className="footer-consent-button" onClick={openConsentSettings}>
+            Cookie-Einstellungen
+          </button>
           <a href={LEGAL_LINKS.contact}>Kontakt</a>
         </nav>
       </div>

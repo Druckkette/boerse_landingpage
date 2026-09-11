@@ -1,6 +1,6 @@
 import { BOOK_LINKS, IMAGE_PATHS } from "../config/links";
 import { purchaseContent } from "../content";
-import { trackEvent } from "../lib/tracking";
+import { trackBookRetailerClick, trackEvent } from "../lib/tracking";
 
 const purchaseLinks = [
   { label: "Bei Amazon bestellen*", href: BOOK_LINKS.amazon, channel: "amazon", variant: "primary" },
@@ -38,7 +38,13 @@ export function PurchaseSection() {
                 target="_blank"
                 rel="sponsored noreferrer"
                 aria-label={`Bei ${link.channel === "amazon" ? "Amazon" : "Springer"} bestellen (Affiliate-Link)`}
-                onClick={() => trackEvent("book_outbound_click", { channel: link.channel })}
+                onClick={() => {
+                  trackEvent("book_outbound_click", { channel: link.channel });
+                  trackBookRetailerClick(
+                    link.channel === "amazon" ? "Amazon" : "Springer",
+                    link.href
+                  );
+                }}
               >
                 {link.label}
               </a>

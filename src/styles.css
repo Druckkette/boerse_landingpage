@@ -1057,6 +1057,98 @@ h3 {
   color: var(--gold-soft);
 }
 
+.footer-consent-button {
+  padding: 0;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-consent-button:hover,
+.footer-consent-button:focus-visible {
+  color: var(--gold-soft);
+}
+
+.consent-banner {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px 24px max(20px, env(safe-area-inset-bottom));
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 -12px 36px rgba(0, 0, 0, 0.24);
+}
+
+.consent-banner-inner {
+  width: min(1160px, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.consent-copy {
+  max-width: 720px;
+}
+
+.consent-copy h2 {
+  margin: 0 0 6px;
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.consent-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.consent-copy a {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.consent-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.consent-actions button {
+  min-height: 44px;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  padding: 10px 16px;
+  background: transparent;
+  color: var(--gold-soft);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.consent-actions button:hover,
+.consent-actions button:focus-visible {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.consent-actions .consent-close {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
 .mobile-sticky-cta {
   display: none;
 }
@@ -1100,6 +1192,21 @@ h3 {
 
   .mobile-menu-layer {
     display: block;
+  }
+
+  .consent-banner-inner {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .consent-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .consent-actions .consent-close {
+    grid-column: 1 / -1;
   }
 
   .hero-inner {
@@ -1541,6 +1648,19 @@ h3 {
 
   .purchase-facts {
     grid-template-columns: 1fr;
+  }
+
+  .consent-banner {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .consent-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .consent-actions .consent-close {
+    grid-column: auto;
   }
 }
 

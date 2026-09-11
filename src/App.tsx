@@ -1,5 +1,6 @@
 import { AuthorSection } from "./components/AuthorSection";
 import { BookContentsSection } from "./components/BookContentsSection";
+import { ConsentBanner } from "./components/ConsentBanner";
 import { FaqSection } from "./components/FaqSection";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -22,6 +23,7 @@ export default function App() {
       </main>
       <Footer />
       <StickyMobileCta />
+      <ConsentBanner />
     </>
   );
 }
