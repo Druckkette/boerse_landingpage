@@ -1,5 +1,6 @@
 import { AuthorSection } from "./components/AuthorSection";
 import { BookContentsSection } from "./components/BookContentsSection";
+import { BookPreviewSection } from "./components/BookPreviewSection";
 import { ConsentBanner } from "./components/ConsentBanner";
 import { FaqSection } from "./components/FaqSection";
 import { Footer } from "./components/Footer";
@@ -17,6 +18,7 @@ export default function App() {
         <Hero />
         <ProblemSection />
         <BookContentsSection />
+        <BookPreviewSection />
         <AuthorSection />
         <PurchaseSection />
         <FaqSection />

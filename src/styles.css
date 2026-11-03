@@ -776,6 +776,257 @@ h3 {
   color: rgba(255, 255, 255, 0.65);
 }
 
+.book-preview-section {
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.book-preview-section .section-heading {
+  margin-bottom: 38px;
+}
+
+.book-preview-section h2 {
+  hyphens: none;
+  overflow-wrap: normal;
+  text-wrap: balance;
+  word-break: normal;
+}
+
+.book-preview-shell {
+  overflow: hidden;
+  border: 1px solid rgba(212, 166, 87, 0.34);
+  background:
+    radial-gradient(circle at 50% 30%, rgba(212, 166, 87, 0.08), transparent 42%),
+    var(--navy);
+  box-shadow: 0 24px 60px rgba(6, 19, 31, 0.16);
+  color: var(--white);
+}
+
+.book-preview-meta {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(300px, 1fr);
+  gap: 48px;
+  align-items: end;
+  padding: 30px 40px 0;
+}
+
+.book-preview-meta h3 {
+  margin: 4px 0 0;
+  color: var(--white);
+  font-size: 1.85rem;
+  font-weight: 500;
+}
+
+.book-preview-meta p {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.book-preview-index {
+  color: var(--gold-soft);
+  font-size: 0.7rem;
+  font-weight: 840;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.book-preview-pages {
+  --preview-page-count: 2;
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: repeat(var(--preview-page-count), minmax(0, 1fr));
+  gap: 20px;
+  align-items: center;
+  padding: 30px 52px 34px;
+}
+
+.book-preview-pages.page-count-3 {
+  --preview-page-count: 3;
+}
+
+.book-preview-page {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.book-preview-page img {
+  width: auto;
+  max-height: 620px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--white);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.4);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.book-preview-page:hover img,
+.book-preview-page:focus-visible img {
+  border-color: var(--gold-soft);
+  transform: translateY(-3px);
+}
+
+.book-preview-controls {
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) 52px;
+  gap: 20px;
+  align-items: center;
+  border-top: 1px solid var(--line-light);
+  padding: 12px 24px;
+}
+
+.book-preview-arrow,
+.preview-lightbox-content button,
+.preview-lightbox-close {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease;
+}
+
+.book-preview-arrow:hover,
+.book-preview-arrow:focus-visible,
+.preview-lightbox-content button:hover,
+.preview-lightbox-content button:focus-visible,
+.preview-lightbox-close:hover,
+.preview-lightbox-close:focus-visible {
+  border-color: var(--gold-soft);
+  color: var(--gold-soft);
+}
+
+.book-preview-progress {
+  display: grid;
+  gap: 9px;
+  justify-items: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.76rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+}
+
+.book-preview-dots {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-preview-dots button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.book-preview-dots button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.book-preview-dots button.is-active::after {
+  border-color: var(--gold);
+  background: var(--gold);
+}
+
+.preview-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(2, 9, 15, 0.92);
+}
+
+.preview-lightbox-panel {
+  width: min(1080px, 100%);
+  max-height: calc(100vh - 48px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--navy);
+  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.52);
+}
+
+.preview-lightbox-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--line-light);
+  padding: 14px 18px 14px 24px;
+  color: var(--white);
+}
+
+.preview-lightbox-head > div {
+  display: grid;
+  gap: 2px;
+}
+
+.preview-lightbox-head span {
+  color: var(--gold-soft);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.preview-lightbox-head strong {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.preview-lightbox-close {
+  flex: 0 0 auto;
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.preview-lightbox-content {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) 52px;
+  gap: 20px;
+  align-items: center;
+  padding: 22px;
+}
+
+.preview-lightbox-content img {
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 160px);
+  justify-self: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--white);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.44);
+}
+
 .author-section {
   background: var(--paper-deep);
 }
@@ -1241,6 +1492,21 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .book-preview-meta {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .book-preview-pages {
+    min-height: 540px;
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+
+  .book-preview-page img {
+    max-height: 510px;
+  }
+
   .author-layout,
   .faq-layout {
     grid-template-columns: 1fr;
@@ -1490,6 +1756,101 @@ h3 {
     font-size: 1.34rem;
   }
 
+  .book-preview-section .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .book-preview-meta {
+    padding: 22px 18px 0;
+  }
+
+  .book-preview-meta h3 {
+    font-size: 1.48rem;
+  }
+
+  .book-preview-meta p {
+    font-size: 0.92rem;
+    line-height: 1.52;
+  }
+
+  .book-preview-pages,
+  .book-preview-pages.page-count-3 {
+    min-height: 0;
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    align-items: stretch;
+    padding: 24px 18px 28px;
+    scroll-padding-inline: 18px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(212, 166, 87, 0.7) rgba(255, 255, 255, 0.08);
+  }
+
+  .book-preview-page {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+  }
+
+  .book-preview-page img {
+    width: 100%;
+    max-height: none;
+  }
+
+  .book-preview-controls {
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .book-preview-dots {
+    max-width: 190px;
+    gap: 2px;
+    overflow-x: auto;
+    padding: 2px;
+  }
+
+  .preview-lightbox {
+    padding: 0;
+  }
+
+  .preview-lightbox-panel {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border: 0;
+  }
+
+  .preview-lightbox-head {
+    padding: 10px 10px 10px 16px;
+  }
+
+  .preview-lightbox-content {
+    position: relative;
+    grid-template-columns: 1fr;
+    padding: 14px 52px;
+  }
+
+  .preview-lightbox-content img {
+    max-height: calc(100vh - 104px);
+  }
+
+  .preview-lightbox-content button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: rgba(6, 19, 31, 0.84);
+    transform: translateY(-50%);
+  }
+
+  .preview-lightbox-content button:first-child {
+    left: 4px;
+  }
+
+  .preview-lightbox-content button:last-child {
+    right: 4px;
+  }
+
   .author-layout {
     gap: 30px;
   }
@@ -1673,6 +2034,10 @@ h3 {
   .mobile-sticky-cta,
   .mobile-menu-layer,
   .module-details,
+  .book-preview-page img,
+  .book-preview-arrow,
+  .preview-lightbox-content button,
+  .preview-lightbox-close,
   .faq-list details {
     transition: none;
   }
