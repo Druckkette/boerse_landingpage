@@ -173,6 +173,7 @@ export function BookPreviewSection() {
           <div
             className={`book-preview-pages page-count-${activeSpread.pdfPages.length}`}
             aria-label={`${activeSpread.title}, ${activeSpread.pdfPages.length} Seiten`}
+            key={activeSpreadIndex}
           >
             {activeSpread.pdfPages.map((pdfPage, pageIndex) => (
               <button
@@ -191,6 +192,11 @@ export function BookPreviewSection() {
               </button>
             ))}
           </div>
+
+          <p className="book-preview-hint">
+            <span className="book-preview-swipe-hint">Seitlich wischen · </span>
+            Seite antippen zum Vergrößern
+          </p>
 
           <div className="book-preview-controls">
             <button

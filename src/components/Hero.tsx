@@ -57,6 +57,12 @@ export function Hero() {
             >
               Bei Springer bestellen*
             </a>
+            <a className="button hero-preview-link" href="#blick-ins-buch">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <path d="M12 5v15M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Z" />
+              </svg>
+              Blick ins Buch
+            </a>
           </div>
           <aside className="hero-product-info" aria-label="Produktinformationen zum Buch">
             <p className="hero-product-summary">
